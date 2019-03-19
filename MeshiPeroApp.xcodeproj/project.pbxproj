@@ -83,6 +83,7 @@
 				7F0EF90F223637260086D994 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		7F0EF90F223637260086D994 /* Products */ = {
 			isa = PBXGroup;

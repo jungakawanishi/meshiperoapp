@@ -2,8 +2,8 @@
 //  MeshiPeroAppUITests.swift
 //  MeshiPeroAppUITests
 //
-//  Created by 中島輔 on 2019/03/11.
-//  Copyright © 2019 Tasuku Nakajima. All rights reserved.
+//  Created by EarthCampus, Inc on 2019/03/11.
+//  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
 import XCTest
