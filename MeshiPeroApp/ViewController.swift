@@ -9,10 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBAction func tapHandler(sender: AnyObject) {
-        menu.text = "カレーライス";
-    }
 
     @IBOutlet weak var menu: UITextField!
     
