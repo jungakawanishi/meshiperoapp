@@ -29,8 +29,9 @@ class MeshiPeroAppUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let label = UILabel()
-        XCTAssertEqual(label.text, "カレーライス")
+        let app = XCUIApplication()
+        let label = app.staticTexts["label"]
+        
     }
 
 }
