@@ -37,6 +37,12 @@ class MeshiPeroAppUITests: XCTestCase {
         // "ViewController_Label"のIdentifierを持ったラベルが存在するか
         XCTAssert(label.exists)
         
+        // ウィンドウ(UIKitだとUIWindow)を取得
+        let window = app.windows.element(boundBy: 0)
+        
+        // ボタンがウィンドウのフレーム内に含まれているか
+        XCTAssert(window.frame.contains(label.frame))
+        
         // ラベルのテキストが「カレーライス」になっていれば成功
         XCTAssertEqual(label, "カレーライス")
     }
