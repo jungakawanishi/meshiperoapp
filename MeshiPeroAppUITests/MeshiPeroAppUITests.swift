@@ -40,7 +40,7 @@ class MeshiPeroAppUITests: XCTestCase {
         // ウィンドウ(UIKitだとUIWindow)を取得
         let window = app.windows.element(boundBy: 0)
         
-        // ボタンがウィンドウのフレーム内に含まれているか
+        // ラベルがウィンドウのフレーム内に含まれているか
         XCTAssert(window.frame.contains(label.frame))
     }
 
