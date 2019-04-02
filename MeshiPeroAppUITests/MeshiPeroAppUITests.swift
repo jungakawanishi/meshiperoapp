@@ -42,9 +42,6 @@ class MeshiPeroAppUITests: XCTestCase {
         
         // ボタンがウィンドウのフレーム内に含まれているか
         XCTAssert(window.frame.contains(label.frame))
-        
-        // ラベルのテキストが「カレーライス」になっていれば成功
-        XCTAssertEqual(label, "カレーライス")
     }
 
 }
