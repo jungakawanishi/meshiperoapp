@@ -31,15 +31,15 @@ class MeshiPeroAppUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let label = app.staticTexts["ViewController_Label"]
+        let labelElement = app.staticTexts["ViewController_Label"]
         
-        XCTAssert(label.exists)
+        XCTAssert(labelElement.exists)
         
         let window = app.windows.element(boundBy: 0)
         
-        XCTAssert(window.frame.contains(label.frame))
+        XCTAssert(window.frame.contains(labelElement.frame))
         
-        XCTAssertEqual(label.label, "カレーライス")
+        XCTAssertEqual(labelElement.label, "カレーライス")
     }
 
 }
