@@ -14,6 +14,7 @@
 		7F0EF91C223637280086D994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0EF91A223637280086D994 /* LaunchScreen.storyboard */; };
 		7F0EF927223637280086D994 /* MeshiPeroAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF926223637280086D994 /* MeshiPeroAppTests.swift */; };
 		7F0EF932223637280086D994 /* MeshiPeroAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF931223637280086D994 /* MeshiPeroAppUITests.swift */; };
+		7FD7FBEA225F308D00D95F16 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7FBE9225F308D00D95F16 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7F0EF92D223637280086D994 /* MeshiPeroAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshiPeroAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0EF931223637280086D994 /* MeshiPeroAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshiPeroAppUITests.swift; sourceTree = "<group>"; };
 		7F0EF933223637280086D994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD7FBE9225F308D00D95F16 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				7F0EF911223637260086D994 /* AppDelegate.swift */,
 				7F0EF913223637260086D994 /* ViewController.swift */,
+				7FD7FBE9225F308D00D95F16 /* ViewController2.swift */,
 				7F0EF915223637260086D994 /* Main.storyboard */,
 				7F0EF918223637280086D994 /* Assets.xcassets */,
 				7F0EF91A223637280086D994 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F0EF914223637260086D994 /* ViewController.swift in Sources */,
+				7FD7FBEA225F308D00D95F16 /* ViewController2.swift in Sources */,
 				7F0EF912223637260086D994 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
