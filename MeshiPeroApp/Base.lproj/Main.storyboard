@@ -78,7 +78,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="dzb-Ft-7Mc">
                     <connections>
-                        <segue destination="3qJ-9J-NCo" kind="show" id="Xw8-Ec-qwB"/>
+                        <segue destination="3qJ-9J-NCo" kind="presentation" id="uwn-bc-Nyd"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
