@@ -75,7 +75,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="label_1" destination="T49-37-496" id="nOj-xe-3ir"/>
+                        <outlet property="label_1" destination="T49-37-496" id="79N-AD-Dyy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
