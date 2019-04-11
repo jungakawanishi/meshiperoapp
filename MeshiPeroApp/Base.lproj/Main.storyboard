@@ -57,6 +57,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T49-37-496" secondAttribute="bottom" id="IEA-nu-PMP"/>
                             <constraint firstItem="T49-37-496" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IFa-xK-5QR"/>
@@ -64,12 +65,22 @@
                             <constraint firstItem="T49-37-496" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fh7-tf-Okc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dzb-Ft-7Mc" appends="YES" id="07E-GI-HfU"/>
+                            <outletCollection property="gestureRecognizers" destination="dzb-Ft-7Mc" appends="YES" id="QEU-0T-tDt"/>
+                            <outletCollection property="gestureRecognizers" destination="dzb-Ft-7Mc" appends="YES" id="ysY-k7-Iba"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="label_1" destination="T49-37-496" id="nOj-xe-3ir"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="dzb-Ft-7Mc">
+                    <connections>
+                        <segue destination="3qJ-9J-NCo" kind="show" id="Xw8-Ec-qwB"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1014" y="-63"/>
         </scene>
