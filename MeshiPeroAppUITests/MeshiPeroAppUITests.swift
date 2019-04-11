@@ -40,6 +40,7 @@ class MeshiPeroAppUITests: XCTestCase {
         XCTAssert(window.frame.contains(labelElement.frame))
         
         XCTAssertEqual(labelElement.label, "カレーライス")
+        
     }
 
 }
