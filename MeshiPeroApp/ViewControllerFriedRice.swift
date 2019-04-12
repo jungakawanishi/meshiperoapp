@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class ViewController: UIViewController {
     
     @IBOutlet weak var label_2: UILabel!
 
