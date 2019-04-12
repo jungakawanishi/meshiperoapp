@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerCurryRice: UIViewController {
 
-    @IBOutlet weak var label_1: UILabel!
+    @IBOutlet weak var labelCurryRice: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        label_1.text = "カレーライス"
+        labelCurryRice.text = "カレーライス"
         
     }
 
