@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewControllerFriedRice: UIViewController {
+class FriedRiceViewController: UIViewController {
     
-    @IBOutlet weak var labelFriedRice: UILabel!
+    @IBOutlet weak var friedRiceLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelFriedRice.text = "チャーハン"
+        friedRiceLabel.text = "チャーハン"
 
         // Do any additional setup after loading the view.
     }
