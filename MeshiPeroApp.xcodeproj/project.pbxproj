@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7F0EF912223637260086D994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF911223637260086D994 /* AppDelegate.swift */; };
-		7F0EF914223637260086D994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF913223637260086D994 /* ViewController.swift */; };
+		7F0EF914223637260086D994 /* CurryRiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF913223637260086D994 /* CurryRiceViewController.swift */; };
 		7F0EF917223637260086D994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0EF915223637260086D994 /* Main.storyboard */; };
 		7F0EF919223637280086D994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F0EF918223637280086D994 /* Assets.xcassets */; };
 		7F0EF91C223637280086D994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0EF91A223637280086D994 /* LaunchScreen.storyboard */; };
 		7F0EF927223637280086D994 /* MeshiPeroAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF926223637280086D994 /* MeshiPeroAppTests.swift */; };
 		7F0EF932223637280086D994 /* MeshiPeroAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF931223637280086D994 /* MeshiPeroAppUITests.swift */; };
+		7FD7FBEC225F322A00D95F16 /* FriedRiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7FBEB225F322A00D95F16 /* FriedRiceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		7F0EF90E223637260086D994 /* MeshiPeroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeshiPeroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0EF911223637260086D994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F0EF913223637260086D994 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F0EF913223637260086D994 /* CurryRiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurryRiceViewController.swift; sourceTree = "<group>"; };
 		7F0EF916223637260086D994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F0EF918223637280086D994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F0EF91B223637280086D994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		7F0EF92D223637280086D994 /* MeshiPeroAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshiPeroAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0EF931223637280086D994 /* MeshiPeroAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshiPeroAppUITests.swift; sourceTree = "<group>"; };
 		7F0EF933223637280086D994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD7FBEB225F322A00D95F16 /* FriedRiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriedRiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				7F0EF911223637260086D994 /* AppDelegate.swift */,
-				7F0EF913223637260086D994 /* ViewController.swift */,
+				7F0EF913223637260086D994 /* CurryRiceViewController.swift */,
+				7FD7FBEB225F322A00D95F16 /* FriedRiceViewController.swift */,
 				7F0EF915223637260086D994 /* Main.storyboard */,
 				7F0EF918223637280086D994 /* Assets.xcassets */,
 				7F0EF91A223637280086D994 /* LaunchScreen.storyboard */,
@@ -257,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F0EF914223637260086D994 /* ViewController.swift in Sources */,
+				7F0EF914223637260086D994 /* CurryRiceViewController.swift in Sources */,
 				7F0EF912223637260086D994 /* AppDelegate.swift in Sources */,
+				7FD7FBEC225F322A00D95F16 /* FriedRiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

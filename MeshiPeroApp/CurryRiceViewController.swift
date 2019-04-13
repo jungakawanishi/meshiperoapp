@@ -2,20 +2,21 @@
 //  ViewController.swift
 //  MeshiPeroApp
 //
-//  Created by EarthCampus, Inc on 2019/03/11.
+//  Created by EarthCampus, Inc. on 2019/03/11.
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class CurryRiceViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var curryRiceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        label.text = "カレーライス"
+        curryRiceLabel.text = "カレーライス"
+        
     }
 
 

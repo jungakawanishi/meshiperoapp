@@ -2,7 +2,7 @@
 //  MeshiPeroAppUITests.swift
 //  MeshiPeroAppUITests
 //
-//  Created by EarthCampus, Inc on 2019/03/11.
+//  Created by EarthCampus, Inc. on 2019/03/11.
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
@@ -40,6 +40,7 @@ class MeshiPeroAppUITests: XCTestCase {
         XCTAssert(window.frame.contains(labelElement.frame))
         
         XCTAssertEqual(labelElement.label, "カレーライス")
+        
     }
 
 }
