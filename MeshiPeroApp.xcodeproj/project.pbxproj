@@ -14,7 +14,6 @@
 		7F0EF91C223637280086D994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0EF91A223637280086D994 /* LaunchScreen.storyboard */; };
 		7F0EF927223637280086D994 /* MeshiPeroAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF926223637280086D994 /* MeshiPeroAppTests.swift */; };
 		7F0EF932223637280086D994 /* MeshiPeroAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF931223637280086D994 /* MeshiPeroAppUITests.swift */; };
-		7F3FF4C62265D62900DA617F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3FF4C52265D62900DA617F /* PageViewController.swift */; };
 		7FD7FBEC225F322A00D95F16 /* FriedRiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7FBEB225F322A00D95F16 /* FriedRiceViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,6 @@
 		7F0EF92D223637280086D994 /* MeshiPeroAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshiPeroAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0EF931223637280086D994 /* MeshiPeroAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshiPeroAppUITests.swift; sourceTree = "<group>"; };
 		7F0EF933223637280086D994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F3FF4C52265D62900DA617F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		7FD7FBEB225F322A00D95F16 /* FriedRiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriedRiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 				7F0EF911223637260086D994 /* AppDelegate.swift */,
 				7F0EF913223637260086D994 /* CurryRiceViewController.swift */,
 				7FD7FBEB225F322A00D95F16 /* FriedRiceViewController.swift */,
-				7F3FF4C52265D62900DA617F /* PageViewController.swift */,
 				7F0EF915223637260086D994 /* Main.storyboard */,
 				7F0EF918223637280086D994 /* Assets.xcassets */,
 				7F0EF91A223637280086D994 /* LaunchScreen.storyboard */,
@@ -266,7 +263,6 @@
 				7F0EF914223637260086D994 /* CurryRiceViewController.swift in Sources */,
 				7F0EF912223637260086D994 /* AppDelegate.swift in Sources */,
 				7FD7FBEC225F322A00D95F16 /* FriedRiceViewController.swift in Sources */,
-				7F3FF4C62265D62900DA617F /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
