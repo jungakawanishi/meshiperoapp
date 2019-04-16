@@ -11,6 +11,10 @@ import UIKit
 class FriedRiceViewController: UIViewController {
     
     @IBOutlet weak var friedRiceLabel: UILabel!
+    
+    @IBAction func rightSwipe(sender: AnyObject) {
+        performSegue(withIdentifier: "toCurryRiceViewController", sender: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

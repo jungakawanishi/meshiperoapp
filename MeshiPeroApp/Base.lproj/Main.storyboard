@@ -21,6 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="friedRiceLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-il-MDk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <accessibility key="accessibilityConfiguration" identifier="ViewController_Label_2"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,11 +36,6 @@
                             <constraint firstItem="FGZ-LV-t4u" firstAttribute="bottom" secondItem="qHu-il-MDk" secondAttribute="bottom" id="pIy-8g-639"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FGZ-LV-t4u"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Aii-ss-mZ7" appends="YES" id="RNC-zX-u4V"/>
-                            <outletCollection property="gestureRecognizers" destination="Aii-ss-mZ7" appends="YES" id="Jnx-6K-AgI"/>
-                            <outletCollection property="gestureRecognizers" destination="Aii-ss-mZ7" appends="YES" id="9zL-gK-KKa"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="friedRiceLabel" destination="qHu-il-MDk" id="9dL-uC-NeI"/>
@@ -48,7 +44,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixJ-xO-fb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="Aii-ss-mZ7">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" id="fhS-3J-zaX"/>
+                        <action selector="rightSwipeWithSender:" destination="3qJ-9J-NCo" id="F2Y-wc-9Vu"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toCurryRiceViewController" id="fhS-3J-zaX"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -79,11 +76,6 @@
                             <constraint firstItem="T49-37-496" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fh7-tf-Okc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="dzb-Ft-7Mc" appends="YES" id="07E-GI-HfU"/>
-                            <outletCollection property="gestureRecognizers" destination="dzb-Ft-7Mc" appends="YES" id="QEU-0T-tDt"/>
-                            <outletCollection property="gestureRecognizers" destination="dzb-Ft-7Mc" appends="YES" id="ysY-k7-Iba"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="curryRiceLabel" destination="T49-37-496" id="I4K-1I-9cv"/>
@@ -92,7 +84,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="dzb-Ft-7Mc">
                     <connections>
-                        <segue destination="3qJ-9J-NCo" kind="presentation" identifier="toViewController2" id="uwn-bc-Nyd"/>
+                        <action selector="rightSwipeWithSender:" destination="BYZ-38-t0r" id="uHX-Xe-Z7u"/>
+                        <segue destination="3qJ-9J-NCo" kind="presentation" identifier="toFriedRiceViewController" id="uwn-bc-Nyd"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
