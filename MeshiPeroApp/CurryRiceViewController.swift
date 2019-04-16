@@ -12,10 +12,6 @@ class CurryRiceViewController: UIViewController {
 
     @IBOutlet weak var curryRiceLabel: UILabel!
     
-    @IBAction func rightSwipe(sender: AnyObject) {
-        performSegue(withIdentifier: "toFriedRiceViewController", sender: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
