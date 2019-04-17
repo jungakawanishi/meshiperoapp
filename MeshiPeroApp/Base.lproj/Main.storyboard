@@ -20,7 +20,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="friedRiceLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-il-MDk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <accessibility key="accessibilityConfiguration" identifier="ViewController_Label_2"/>
+                                <accessibility key="accessibilityConfiguration" identifier="FriedRiceViewController_Label"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
@@ -64,7 +64,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curryRiceLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T49-37-496">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <accessibility key="accessibilityConfiguration" identifier="ViewController_Label"/>
+                                <accessibility key="accessibilityConfiguration" identifier="CurryRiceViewController_Label"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>

@@ -27,19 +27,35 @@ class MeshiPeroAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testCurryRiceLabel() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let labelElement = app.staticTexts["ViewController_Label"]
+        let curryRiceLabelElement = app.staticTexts["CurryRiceViewController_Label"]
         
-        XCTAssert(labelElement.exists)
+        XCTAssert(curryRiceLabelElement.exists)
         
         let window = app.windows.element(boundBy: 0)
         
-        XCTAssert(window.frame.contains(labelElement.frame))
+        XCTAssert(window.frame.contains(curryRiceLabelElement.frame))
         
-        XCTAssertEqual(labelElement.label, "カレーライス")
+        XCTAssertEqual(curryRiceLabelElement.label, "カレーライス")
+        
+    }
+    
+    func testFriedRiceLabel() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let friedRiceLabelElement = app.staticTexts["FriedRiceViewController_Label"]
+        
+        XCTAssert(friedRiceLabelElement.exists)
+        
+        let window = app.windows.element(boundBy: 0)
+        
+        XCTAssert(window.frame.contains(friedRiceLabelElement.frame))
+        
+        XCTAssertEqual(friedRiceLabelElement.label, "チャーハン")
         
     }
 
