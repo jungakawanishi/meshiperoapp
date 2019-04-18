@@ -33,24 +33,16 @@ class MeshiPeroAppUITests: XCTestCase {
         
         let window = app.windows.element(boundBy: 0)
         
-        XCTContext.runActivity(named: "初期表示でcurryRiceLabelの文言を確認") { (activity) in
-            XCTAssertEqual(app.staticTexts["CurryRiceViewController_Label"].label,
-                           "カレーライス")
-            XCTAssert(window.frame.contains(app.staticTexts["CurryRiceViewController_Label"].frame))
-        }
-        XCTContext.runActivity(named: "初期表示で画面を右にスワイプし、新たに表示されたfriedRiceLabelの文言を確認") { (activity) in
-            app.swipeRight()
-            XCTAssertEqual(app.staticTexts["FriedRiceViewController_Label"].label,
-                           "チャーハン")
-            
-            XCTAssert(window.frame.contains(app.staticTexts["FriedRiceViewController_Label"].frame))
-        }
-        XCTContext.runActivity(named: "チャーハンの文字が表示された画面を右にすわいぷし、新たに表示されたCurryRiceLabelの文言を確認") { (activity) in
-            app.swipeRight()
-            XCTAssertEqual(app.staticTexts["CurryRiceViewController_Label"].label,
-                           "カレーライス")
-            
-            XCTAssert(window.frame.contains(app.staticTexts["CurryRiceViewController_Label"].frame))
-        }
+        var curryRiceLabelElement = app.staticTexts["CurryRiceViewController_Label"]
+        XCTAssertEqual(curryRiceLabelElement.label, "カレーライス")
+        XCTAssert(window.frame.contains(curryRiceLabelElement.frame))
+        
+        app.swipeRight()
+        XCTAssertEqual(app.staticTexts["FriedRiceViewController_Label"].label, "チャーハン")
+        XCTAssert(window.frame.contains(app.staticTexts["FriedRiceViewController_Label"].frame))
+        
+        app.swipeRight()
+        XCTAssertEqual(app.staticTexts["CurryRiceViewController_Label"].label, "カレーライス")
+        XCTAssert(window.frame.contains(app.staticTexts["CurryRiceViewController_Label"].frame))
     }
 }
