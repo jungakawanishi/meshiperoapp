@@ -19,7 +19,8 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var menu = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
-        menuLabel.text = menu[0]
+        let i = Int.random(in: 0..<6)
+        menuLabel.text = menu[i]
         
     }
 

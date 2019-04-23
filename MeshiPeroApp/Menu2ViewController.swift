@@ -9,6 +9,8 @@
 import UIKit
 
 // 一時的にMenu2ViewControllerを設定しているが、後に消す予定
+// 全て消すので、変数名も一時的にmenu2とする
+
 class Menu2ViewController: UIViewController {
     
     @IBOutlet weak var menu2Label: UILabel!
@@ -19,7 +21,9 @@ class Menu2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menu2Label.text = "チャーハン"
+        var menu2 = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
+        let i = Int.random(in: 0..<6)
+        menu2Label.text = menu2[i]
 
         // Do any additional setup after loading the view.
     }
