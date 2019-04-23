@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CurryRiceViewController: UIViewController {
+class MenuViewController: UIViewController {
 
-    @IBOutlet weak var curryRiceLabel: UILabel!
+    @IBOutlet weak var menuLabel: UILabel!
     
     @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
     }
@@ -18,7 +18,8 @@ class CurryRiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        curryRiceLabel.text = "カレーライス"
+        var menu = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
+        menuLabel.text = menu[0]
         
     }
 

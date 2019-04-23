@@ -10,17 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fried Rice View Controller-->
+        <!--Menu2 View Controller-->
         <scene sceneID="hrx-Y4-hbF">
             <objects>
-                <viewController storyboardIdentifier="FriedRiceViewController" id="3qJ-9J-NCo" customClass="FriedRiceViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FriedRiceViewController" id="3qJ-9J-NCo" customClass="Menu2ViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kMc-t1-KDf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="friedRiceLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-il-MDk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menu2Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-il-MDk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <accessibility key="accessibilityConfiguration" identifier="FriedRiceViewController_Label"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Menu2ViewController_Label"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
@@ -41,7 +41,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="friedRiceLabel" destination="qHu-il-MDk" id="9dL-uC-NeI"/>
+                        <outlet property="menu2Label" destination="qHu-il-MDk" id="7cd-7I-mbG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixJ-xO-fb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -54,17 +54,17 @@
             </objects>
             <point key="canvasLocation" x="121" y="-63"/>
         </scene>
-        <!--Curry Rice View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="CurryRiceViewController" id="BYZ-38-t0r" customClass="CurryRiceViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurryRiceViewController" id="BYZ-38-t0r" customClass="MenuViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curryRiceLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T49-37-496">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menuLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T49-37-496">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <accessibility key="accessibilityConfiguration" identifier="CurryRiceViewController_Label"/>
+                                <accessibility key="accessibilityConfiguration" identifier="MenuViewController_Label"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
@@ -85,7 +85,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="curryRiceLabel" destination="T49-37-496" id="I4K-1I-9cv"/>
+                        <outlet property="menuLabel" destination="T49-37-496" id="oFN-FX-0gp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

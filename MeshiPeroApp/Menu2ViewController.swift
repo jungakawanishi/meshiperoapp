@@ -8,9 +8,10 @@
 
 import UIKit
 
-class FriedRiceViewController: UIViewController {
+// 一時的にMenu2ViewControllerを設定しているが、後に消す予定
+class Menu2ViewController: UIViewController {
     
-    @IBOutlet weak var friedRiceLabel: UILabel!
+    @IBOutlet weak var menu2Label: UILabel!
 
     @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
     }
@@ -18,7 +19,7 @@ class FriedRiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        friedRiceLabel.text = "チャーハン"
+        menu2Label.text = "チャーハン"
 
         // Do any additional setup after loading the view.
     }
