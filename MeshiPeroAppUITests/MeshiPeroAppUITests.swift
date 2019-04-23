@@ -16,8 +16,7 @@ class MeshiPeroAppUITests: XCTestCase {
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
+       // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         app.launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
@@ -27,20 +26,22 @@ class MeshiPeroAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testSwipeToOpenAnotherView() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let labelElement = app.staticTexts["ViewController_Label"]
-        
-        XCTAssert(labelElement.exists)
-        
         let window = app.windows.element(boundBy: 0)
         
-        XCTAssert(window.frame.contains(labelElement.frame))
+        XCTAssertEqual(app.staticTexts["CurryRiceViewController_Label"].label, "カレーライス", "ラベルの初期表示がカレーライスになっていない")
+        XCTAssert(window.frame.contains(app.staticTexts["CurryRiceViewController_Label"].frame), "初期表示でのUIWindow枠内にラベルが表示されていない")
         
-        XCTAssertEqual(labelElement.label, "カレーライス")
+        app.swipeRight()
+        XCTAssertEqual(app.staticTexts["FriedRiceViewController_Label"].label, "チャーハン", "一度スワイプした後のラベルの表示がチャーハンになっていない")
+        XCTAssert(window.frame.contains(app.staticTexts["FriedRiceViewController_Label"].frame), "一度スワイプした後のUIWindow枠内にラベルが表示されていない")
+        
+        app.swipeRight()
+        XCTAssertEqual(app.staticTexts["CurryRiceViewController_Label"].label, "カレーライス", "二度スワイプした後のラベルの表示がカレーライスになっていない")
+        XCTAssert(window.frame.contains(app.staticTexts["CurryRiceViewController_Label"].frame), "二度スワイプした後のUIWindow枠内にラベルが表示されていない")
         
     }
-
 }

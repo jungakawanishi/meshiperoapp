@@ -12,6 +12,9 @@ class FriedRiceViewController: UIViewController {
     
     @IBOutlet weak var friedRiceLabel: UILabel!
 
+    @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
