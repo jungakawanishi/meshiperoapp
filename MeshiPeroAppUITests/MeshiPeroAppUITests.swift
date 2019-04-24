@@ -32,15 +32,15 @@ class MeshiPeroAppUITests: XCTestCase {
         
         let window = app.windows.element(boundBy: 0)
         
-        XCTAssertEqual(app.staticTexts["MenuViewController_Label"].label, "カレーライス", "ラベルの初期表示がカレーライスになっていない")
+        XCTAssert(app.staticTexts["MenuViewController_Label"].exists, "初期表示でラベルが存在していない")
         XCTAssert(window.frame.contains(app.staticTexts["MenuViewController_Label"].frame), "初期表示でのUIWindow枠内にラベルが表示されていない")
         
         app.swipeRight()
-        XCTAssertEqual(app.staticTexts["Menu2ViewController_Label"].label, "チャーハン", "一度スワイプした後のラベルの表示がチャーハンになっていない")
+        XCTAssert(app.staticTexts["Menu2ViewController_Label"].exists, "一度スワイプした後、ラベルが存在していない")
         XCTAssert(window.frame.contains(app.staticTexts["Menu2ViewController_Label"].frame), "一度スワイプした後のUIWindow枠内にラベルが表示されていない")
         
         app.swipeRight()
-        XCTAssertEqual(app.staticTexts["MenuViewController_Label"].label, "カレーライス", "二度スワイプした後のラベルの表示がカレーライスになっていない")
+        XCTAssert(app.staticTexts["MenuViewController_Label"].exists, "二度スワイプした後、ラベルが存在していない")
         XCTAssert(window.frame.contains(app.staticTexts["MenuViewController_Label"].frame), "二度スワイプした後のUIWindow枠内にラベルが表示されていない")
         
     }
