@@ -42,6 +42,6 @@ class MeshiPeroAppUITests: XCTestCase {
         app.swipeRight()
         XCTAssert(app.staticTexts["MenuViewController_Label"].exists, "二度スワイプした後、ラベルが存在していない")
         XCTAssert(window.frame.contains(app.staticTexts["MenuViewController_Label"].frame), "二度スワイプした後のUIWindow枠内にラベルが表示されていない")
-        
     }
+    
 }
