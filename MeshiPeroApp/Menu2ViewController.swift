@@ -8,8 +8,7 @@
 
 import UIKit
 
-// 一時的にMenu2ViewControllerを設定しているが、後に消す予定
-// 全て消すので、変数名も一時的にmenu2とする
+//  TODO 一時的にMenu2ViewControllerを設定しているが、後に消す予定。全て消すので、変数名も一時的にmenu2とする。
 
 class Menu2ViewController: UIViewController {
     
