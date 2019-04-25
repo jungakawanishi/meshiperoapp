@@ -21,7 +21,7 @@ class Menu2ViewController: UIViewController {
         super.viewDidLoad()
         
         var menu2 = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
-        let i = Int.random(in: 0..<6)
+        let i = Int.random(in: 0..<menu2.count)
         menu2Label.text = menu2[i]
 
         // Do any additional setup after loading the view.
