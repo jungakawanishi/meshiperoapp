@@ -8,9 +8,11 @@
 
 import UIKit
 
-class FriedRiceViewController: UIViewController {
+//  TODO 一時的にMenu2ViewControllerを設定しているが、後に消す予定。全て消すので、変数名も一時的にmenu2とする。
+
+class Menu2ViewController: UIViewController {
     
-    @IBOutlet weak var friedRiceLabel: UILabel!
+    @IBOutlet weak var menu2Label: UILabel!
 
     @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
     }
@@ -18,7 +20,9 @@ class FriedRiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        friedRiceLabel.text = "チャーハン"
+        var menu2 = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
+        let i = Int.random(in: 0..<menu2.count)
+        menu2Label.text = menu2[i]
 
         // Do any additional setup after loading the view.
     }
