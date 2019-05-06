@@ -32,7 +32,7 @@ class MeshiPeroAppUITests: XCTestCase {
         
         let window = app.windows.element(boundBy: 0)
         let menu = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
-        let menuLabelElement = app.staticTexts["MenuViewController_Label"]
+        let menuLabelElement = app.staticTexts["ViewController_MenuLabel"]
         
         // TODO Menu2ViewControllerを削除した後、こちらもmenu2に関わるものを削除
         
