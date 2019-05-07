@@ -13,7 +13,7 @@
         <!--pero-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
         <!--add menu-->
         <scene sceneID="QVU-hm-W2a">
             <objects>
-                <viewController id="glf-OI-ivv" sceneMemberID="viewController">
+                <viewController id="glf-OI-ivv" customClass="ViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C89-pN-VAl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,6 +73,9 @@
                                 <rect key="frame" x="143" y="453" width="89" height="65"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="glf-OI-ivv" eventType="touchUpInside" id="WSd-P0-PFZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,6 +90,9 @@
                         <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="add menu" id="pIA-0A-HEd"/>
+                    <connections>
+                        <outlet property="menuTextField" destination="w3i-eQ-UFt" id="Ug8-yk-aGI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOW-xx-Nvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
