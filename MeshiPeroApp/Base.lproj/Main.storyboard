@@ -62,14 +62,35 @@
                     <view key="view" contentMode="scaleToFill" id="C89-pN-VAl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="追加したい献立" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3i-eQ-UFt">
+                                <rect key="frame" x="20" y="237" width="335" height="59"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7s-di-3Yj">
+                                <rect key="frame" x="143" y="453" width="89" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <state key="normal" title="追加"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="A7s-di-3Yj" secondAttribute="trailing" constant="143" id="Gj3-yd-H6z"/>
+                            <constraint firstItem="A7s-di-3Yj" firstAttribute="top" secondItem="w3i-eQ-UFt" secondAttribute="bottom" constant="157" id="KkA-gI-Yfh"/>
+                            <constraint firstItem="A7s-di-3Yj" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="143" id="YqN-Rm-n8U"/>
+                            <constraint firstItem="w3i-eQ-UFt" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="20" id="fgm-xf-QLR"/>
+                            <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="w3i-eQ-UFt" secondAttribute="trailing" constant="20" id="j8J-fV-LgS"/>
+                            <constraint firstItem="NWB-Lh-cvn" firstAttribute="bottom" secondItem="A7s-di-3Yj" secondAttribute="bottom" constant="100" id="sBK-5X-b3g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="add menu" id="pIA-0A-HEd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOW-xx-Nvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2446" y="403"/>
+            <point key="canvasLocation" x="2445.5999999999999" y="402.54872563718146"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7lE-fQ-1gj">
