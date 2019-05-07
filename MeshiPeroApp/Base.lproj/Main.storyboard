@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AtN-aF-ZpS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--pero-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,22 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menuLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T49-37-496">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <accessibility key="accessibilityConfiguration" identifier="ViewController_MenuLabel"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMV-LO-XQ0">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="58j-hX-brL" userLabel="ペロする"/>
-                                    <tabBarItem systemItem="more" id="QyY-aH-K1O" userLabel="メニュー追加"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -49,6 +40,7 @@
                             <outletCollection property="gestureRecognizers" destination="7hL-9S-j8e" appends="YES" id="CPG-em-WSW"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="pero" id="L6R-1y-uHj"/>
                     <connections>
                         <outlet property="menuLabel" destination="T49-37-496" id="oFN-FX-0gp"/>
                     </connections>
@@ -57,11 +49,46 @@
                 <swipeGestureRecognizer direction="right" id="7hL-9S-j8e">
                     <connections>
                         <action selector="rightSwiped:" destination="BYZ-38-t0r" id="vTf-pS-UUj"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" id="lcS-u1-xGG"/>
+                        <segue destination="AtN-aF-ZpS" kind="presentation" id="lcS-u1-xGG"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1014" y="-63"/>
+            <point key="canvasLocation" x="2446" y="-374"/>
+        </scene>
+        <!--add menu-->
+        <scene sceneID="QVU-hm-W2a">
+            <objects>
+                <viewController id="glf-OI-ivv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C89-pN-VAl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="add menu" id="pIA-0A-HEd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOW-xx-Nvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="403"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7lE-fQ-1gj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AtN-aF-ZpS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zhx-hZ-br2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BTr-ZR-pCj"/>
+                        <segue destination="glf-OI-ivv" kind="relationship" relationship="viewControllers" id="YMr-qu-Xy8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1O9-c6-yzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="-17"/>
         </scene>
     </scenes>
 </document>
