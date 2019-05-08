@@ -13,7 +13,7 @@
         <!--pero-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PeroViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
         <!--add menu-->
         <scene sceneID="QVU-hm-W2a">
             <objects>
-                <viewController id="glf-OI-ivv" customClass="ViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="glf-OI-ivv" customClass="AddMenuViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C89-pN-VAl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="add menu" id="pIA-0A-HEd"/>
                     <connections>
-                        <outlet property="menuTextField" destination="w3i-eQ-UFt" id="Ug8-yk-aGI"/>
+                        <outlet property="textFieldToAddMenu" destination="w3i-eQ-UFt" id="haz-Ic-IR4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOW-xx-Nvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
