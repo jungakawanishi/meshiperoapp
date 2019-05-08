@@ -21,6 +21,11 @@ class PeroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if UserDefaults.standard.object(forKey: "Menu") != nil {
+            fromAppDelegate.menu = UserDefaults.standard.object(forKey: "Menu") as! [String]
+        }
+        
         let i = Int.random(in: 0..<fromAppDelegate.menu.count)
         menuLabel.text = fromAppDelegate.menu[i]
         
@@ -54,8 +59,6 @@ class AddMenuViewController: UIViewController {
             
             UserDefaults.standard.set( fromAppDelegate.menu, forKey: "Menu" )
             
-        } else {
-            // do nothing
         }
         
     }
