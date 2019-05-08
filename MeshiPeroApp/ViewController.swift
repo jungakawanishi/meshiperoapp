@@ -44,11 +44,20 @@ class AddMenuViewController: UIViewController {
 
     @IBAction func pushButton(_ sender: UIButton) {
         
-        textFieldString = textFieldToAddMenu.text!
+        if (textFieldToAddMenu.text != "") {
+            
+            textFieldString = textFieldToAddMenu.text!
+            
+            fromAppDelegate.menu.append(textFieldString)
+            
+            textFieldToAddMenu.text = ""
+            
+            UserDefaults.standard.set( fromAppDelegate.menu, forKey: "Menu" )
+            
+        } else {
+            // do nothing
+        }
         
-        fromAppDelegate.menu.append(textFieldString)
-        
-        textFieldToAddMenu.text = ""
     }
 }
 
