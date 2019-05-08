@@ -18,23 +18,21 @@ class ViewController: UIViewController {
     @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
     }
     
-    var textFieldString = ""
+    var fromAppDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    var menu = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
+    var textFieldString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let i = Int.random(in: 0..<menu.count)
-        menuLabel.text = menu[i]
+        let i = Int.random(in: 0..<fromAppDelegate.menu.count)
+        menuLabel.text = fromAppDelegate.menu[i]
         
     }
 
     @IBAction func pushButton(_ sender: UIButton) {
 
         textFieldString = menuTextField.text!
-        
-        menu += [textFieldString]
         
         menuTextField.text = ""
     }
