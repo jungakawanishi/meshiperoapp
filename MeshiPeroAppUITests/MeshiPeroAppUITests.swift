@@ -44,4 +44,24 @@ class MeshiPeroAppUITests: XCTestCase {
         XCTAssert(window.frame.contains(menuLabelElement.frame), "一度スワイプした後のUIWindow枠内にラベルが表示されていない")
     }
     
+    func testTabBarToSwitchView() {
+        
+        let window = app.windows.element(boundBy: 0)
+        let tabBarsQuery = app.tabBars
+        
+        tabBarsQuery.buttons["addMenu"].tap()
+        
+        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
+        let buttonElement = app.buttons["addMenuViewController_Button"]
+        
+        XCTAssert(window.frame.contains(menuTextFieldElement.frame), "addMenuに画面を切り替えた時に、textFieldToAddMenuがUIWindow枠内に表示されていない")
+        XCTAssert(window.frame.contains(buttonElement.frame), "addMenuに画面を切り替えた時に、追加ボタンがUIWindow枠内に表示されていない")
+        
+        tabBarsQuery.buttons["pero"].tap()
+        
+        let menuLabelElement = app.staticTexts["ViewController_MenuLabel"]
+        
+        XCTAssert(window.frame.contains(menuLabelElement.frame), "peroに画面を切り替えた時に、menuLabelがUIWindow枠内に表示されていない")
+        
+    }
 }

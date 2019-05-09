@@ -55,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="2446" y="-374"/>
         </scene>
-        <!--add menu-->
+        <!--addMenu-->
         <scene sceneID="QVU-hm-W2a">
             <objects>
                 <viewController id="glf-OI-ivv" customClass="AddMenuViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,12 +65,14 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="追加したい献立" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3i-eQ-UFt">
                                 <rect key="frame" x="20" y="237" width="335" height="59"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_TextFieldToAddMenu"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7s-di-3Yj">
                                 <rect key="frame" x="143" y="453" width="89" height="65"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_Button"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="追加"/>
                                 <connections>
@@ -89,7 +91,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="add menu" id="pIA-0A-HEd"/>
+                    <tabBarItem key="tabBarItem" title="addMenu" id="pIA-0A-HEd"/>
                     <connections>
                         <outlet property="textFieldToAddMenu" destination="w3i-eQ-UFt" id="haz-Ic-IR4"/>
                     </connections>
