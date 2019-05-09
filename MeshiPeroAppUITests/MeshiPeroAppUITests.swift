@@ -33,9 +33,7 @@ class MeshiPeroAppUITests: XCTestCase {
         let window = app.windows.element(boundBy: 0)
         let menu = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
         let menuLabelElement = app.staticTexts["ViewController_MenuLabel"]
-        
-        // TODO Menu2ViewControllerを削除した後、こちらもmenu2に関わるものを削除
-        
+
         XCTAssert(menu.contains(menuLabelElement.label), "初期表示で意図した献立が表示されていない")
         XCTAssert(window.frame.contains(menuLabelElement.frame), "初期表示でのUIWindow枠内にラベルが表示されていない")
         
