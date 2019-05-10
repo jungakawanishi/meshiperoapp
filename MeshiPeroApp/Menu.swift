@@ -7,9 +7,11 @@
 //
 
 class Menu {
+    
     var name = ""
     
-    init(_ name: String) {
+    init(name: String) {
         self.name = name
     }
+    
 }

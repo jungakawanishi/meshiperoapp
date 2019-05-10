@@ -8,14 +8,21 @@
 
 import UIKit
 
+var menu = [
+    Menu(name: "カレーライス").name,
+    Menu(name: "チャーハン").name,
+    Menu(name: "ラーメン").name,
+    Menu(name: "ギョーザ").name,
+    Menu(name: "唐揚げ").name,
+    Menu(name: "八宝菜").name
+]
+
 class AddMenuViewController: UIViewController {
     
     
     @IBOutlet weak var textFieldToAddMenu: UITextField!
     
     var textFieldString = ""
-    
-    var fromAppDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +35,11 @@ class AddMenuViewController: UIViewController {
             
             textFieldString = textFieldToAddMenu.text!
             
-            fromAppDelegate.menu.append(textFieldString)
+            menu.append(Menu(name: textFieldString).name)
             
             textFieldToAddMenu.text = ""
             
-            UserDefaults.standard.set( fromAppDelegate.menu, forKey: "Menu" )
+            UserDefaults.standard.set( menu, forKey: "Menu" )
             
         }
         
