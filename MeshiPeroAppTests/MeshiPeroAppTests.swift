@@ -21,10 +21,6 @@ class MeshiPeroAppTests: XCTestCase {
         super.tearDown()
     }
 
-    func testSwipeToOpenAnotherView() {
- 
-    }
-
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

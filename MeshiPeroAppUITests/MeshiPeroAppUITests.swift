@@ -31,15 +31,14 @@ class MeshiPeroAppUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let window = app.windows.element(boundBy: 0)
-        let menu = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
-        let menuLabelElement = app.staticTexts["ViewController_MenuLabel"]
-
-        XCTAssert(menu.contains(menuLabelElement.label), "初期表示で意図した献立が表示されていない")
+        let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
+        
         XCTAssert(window.frame.contains(menuLabelElement.frame), "初期表示でのUIWindow枠内にラベルが表示されていない")
         
         app.swipeRight()
-        XCTAssert(menu.contains(menuLabelElement.label), "一度スワイプした後で意図した献立が表示されていない")
         XCTAssert(window.frame.contains(menuLabelElement.frame), "一度スワイプした後のUIWindow枠内にラベルが表示されていない")
+        
+        UserDefaults.standard.removeObject(forKey: "Menu")
     }
     
     func testTabBarToSwitchView() {
@@ -57,9 +56,70 @@ class MeshiPeroAppUITests: XCTestCase {
         
         tabBarsQuery.buttons["pero"].tap()
         
-        let menuLabelElement = app.staticTexts["ViewController_MenuLabel"]
+        let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
         
         XCTAssert(window.frame.contains(menuLabelElement.frame), "peroに画面を切り替えた時に、menuLabelがUIWindow枠内に表示されていない")
         
+    }
+    
+    func testCanClearTextField() {
+        
+        let tabBarsQuery = app.tabBars
+        
+        tabBarsQuery.buttons["addMenu"].tap()
+        
+        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
+        let buttonElement = app.buttons["addMenuViewController_Button"]
+        
+        menuTextFieldElement.tap()
+        menuTextFieldElement.typeText("ほげほげ")
+        app.buttons["Hide keyboard"].tap()
+        buttonElement.forceTapElement()
+        XCTAssertEqual(menuTextFieldElement.value as! String, "", "メニューを追加するボタンを押しても入力欄が空欄にならない")
+        
+    }
+    
+    func testCanBeIndicatedNewMenu() {
+        
+        let tabBarsQuery = app.tabBars
+        
+        tabBarsQuery.buttons["addMenu"].tap()
+        
+        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
+        let buttonElement = app.buttons["addMenuViewController_Button"]
+        
+        menuTextFieldElement.tap()
+        menuTextFieldElement.typeText("ほげほげ")
+        app.buttons["Next keyboard"].tap()
+        buttonElement.tap()
+        tabBarsQuery.buttons["pero"].tap()
+        
+        let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
+        var count = 0
+        var hogeCanBeIndicated = false
+        repeat {
+            app.swipeRight()
+            if (menuLabelElement.label == "ほげほげ") {
+                hogeCanBeIndicated = true
+                break
+            }
+            count += 1
+        } while (count < 100)
+        XCTAssert(hogeCanBeIndicated, "新しい献立を追加して100回スワイプしても、その献立が表示されない")
+        
+    }
+    
+}
+
+/*Sends a tap event to a hittable/unhittable element.*/
+extension XCUIElement {
+    func forceTapElement() {
+        if self.isHittable {
+            self.tap()
+        }
+        else {
+            let coordinate: XCUICoordinate = self.coordinate(withNormalizedOffset: CGVector(dx:0.0, dy:0.0))
+            coordinate.tap()
+        }
     }
 }

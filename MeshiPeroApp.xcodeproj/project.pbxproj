@@ -103,9 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				7F0EF911223637260086D994 /* AppDelegate.swift */,
-				7F0EF913223637260086D994 /* PeroViewController.swift */,
-				7F6D5D1F2283FEE8003692EF /* Menu.swift */,
-				7F6D5D1D2283FE68003692EF /* AddMenuViewController.swift */,
+				7F6D5D232285386E003692EF /* Model */,
+				7F6D5D2122853836003692EF /* ViewController */,
 				7F0EF915223637260086D994 /* Main.storyboard */,
 				7F0EF918223637280086D994 /* Assets.xcassets */,
 				7F0EF91A223637280086D994 /* LaunchScreen.storyboard */,
@@ -130,6 +129,23 @@
 				7F0EF933223637280086D994 /* Info.plist */,
 			);
 			path = MeshiPeroAppUITests;
+			sourceTree = "<group>";
+		};
+		7F6D5D2122853836003692EF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F0EF913223637260086D994 /* PeroViewController.swift */,
+				7F6D5D1D2283FE68003692EF /* AddMenuViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7F6D5D232285386E003692EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D5D1F2283FEE8003692EF /* Menu.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
