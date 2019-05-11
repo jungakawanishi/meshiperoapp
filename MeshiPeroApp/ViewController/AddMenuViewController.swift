@@ -26,6 +26,17 @@ class AddMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let toolBar:UIToolbar = UIToolbar()
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.sizeToFit()
+        
+        let spacer:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
+        let doneButton:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(closeKeyboard))
+        let toolBarItems = [spacer,doneButton]
+        toolBar.setItems(toolBarItems, animated: true)
+        
+         textFieldToAddMenu.inputAccessoryView = toolBar
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -45,4 +56,7 @@ class AddMenuViewController: UIViewController {
         
     }
     
+    @objc func closeKeyboard() {
+        textFieldToAddMenu.resignFirstResponder()
+    }
 }
