@@ -33,6 +33,7 @@ class AddMenuViewController: UIViewController {
         
         let spacer:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
         let doneButton:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(closeKeyboard))
+        doneButton.accessibilityLabel = "closeKeyboard"
         let toolBarItems = [spacer,doneButton]
         toolBar.setItems(toolBarItems, animated: true)
         

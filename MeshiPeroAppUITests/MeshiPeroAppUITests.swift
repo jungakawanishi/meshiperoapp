@@ -90,8 +90,11 @@ class MeshiPeroAppUITests: XCTestCase {
         
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
-        app.buttons["Next keyboard"].tap()
+        
+        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+        
         buttonElement.tap()
+        buttonToHideKeyboardElement.tap()
         tabBarsQuery.buttons["pero"].tap()
         
         let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
