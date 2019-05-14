@@ -73,9 +73,11 @@ class MeshiPeroAppUITests: XCTestCase {
         
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
-        app.buttons["Hide keyboard"].tap()
-        buttonElement.forceTapElement()
-        XCTAssertEqual(menuTextFieldElement.value as! String, "", "メニューを追加するボタンを押しても入力欄が空欄にならない")
+        
+        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+        buttonElement.tap()
+        buttonToHideKeyboardElement.tap()
+        XCTAssertEqual(menuTextFieldElement.value as! String, "追加したい献立", "メニューを追加するボタンを押しても入力欄が空欄にならない")
         
     }
     
@@ -112,17 +114,4 @@ class MeshiPeroAppUITests: XCTestCase {
         
     }
     
-}
-
-/*Sends a tap event to a hittable/unhittable element.*/
-extension XCUIElement {
-    func forceTapElement() {
-        if self.isHittable {
-            self.tap()
-        }
-        else {
-            let coordinate: XCUICoordinate = self.coordinate(withNormalizedOffset: CGVector(dx:0.0, dy:0.0))
-            coordinate.tap()
-        }
-    }
 }
