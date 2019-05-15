@@ -37,7 +37,7 @@ class AddMenuViewController: UIViewController {
         let toolBarItems = [spacer,doneButton]
         toolBar.setItems(toolBarItems, animated: true)
         
-         textFieldToAddMenu.inputAccessoryView = toolBar
+        textFieldToAddMenu.inputAccessoryView = toolBar
         // Do any additional setup after loading the view, typically from a nib.
     }
     
