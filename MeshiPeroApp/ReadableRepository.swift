@@ -6,9 +6,9 @@
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class ReadableMenuRepository: ReadableRepositoryContract {
+class ReadableRepository: ReadableRepositoryContract {
     
     func read() -> [String] {
         return UserDefaults.standard.object(forKey: "Menu") as! [String]

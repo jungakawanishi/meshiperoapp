@@ -6,8 +6,6 @@
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
-import Foundation
-
 protocol ReadableRepositoryContract {
     
     func read() -> [String]

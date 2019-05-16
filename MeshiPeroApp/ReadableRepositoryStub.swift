@@ -6,9 +6,7 @@
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
-import Foundation
-
-class ReadableMenuRepositoryStub: ReadableRepositoryContract {
+class ReadableRepositoryStub: ReadableRepositoryContract {
     
     private let baseMenu: [String]
     

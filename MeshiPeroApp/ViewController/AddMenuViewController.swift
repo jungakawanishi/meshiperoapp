@@ -43,6 +43,7 @@ class AddMenuViewController: UIViewController {
     
     @IBAction func pushButton(_ sender: UIButton) {
         
+        
         if (textFieldToAddMenu.text != "") {
             
             textFieldString = textFieldToAddMenu.text!
@@ -51,7 +52,7 @@ class AddMenuViewController: UIViewController {
             
             textFieldToAddMenu.text = ""
             
-            UserDefaults.standard.set( menu, forKey: "Menu" )
+            UserDefaults.standard.set(menu, forKey: "Menu")
             
         }
         

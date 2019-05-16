@@ -19,7 +19,7 @@ class PeroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+    
         if UserDefaults.standard.object(forKey: "Menu") != nil {
             menu = UserDefaults.standard.object(forKey: "Menu") as! [String]
         }
