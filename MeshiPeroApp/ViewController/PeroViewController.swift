@@ -19,6 +19,9 @@ class PeroViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        if (UserDefaults.standard.object(forKey: "Menu") != nil) {
+            menu = Input.readBaseMenu() // ここでUDに保存されている配列を呼び出したいが、それができない
+        }
         let i = Int.random(in: 0..<menu.count)
         menuLabel.text = menu[i].name
         

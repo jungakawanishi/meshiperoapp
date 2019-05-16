@@ -45,6 +45,8 @@ class AddMenuViewController: UIViewController {
             
             textFieldToAddMenu.text = ""
             
+            Output.writeBaseMenu(menu: menu) // ここでUDに保存されているobjectを書き換えたいが、それができない
+            
         }
         
     }
