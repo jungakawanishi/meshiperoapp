@@ -8,6 +8,6 @@
 
 protocol ReadableRepositoryContract {
     
-    func read() -> [String]
+    func read() -> [Menu]
     
 }

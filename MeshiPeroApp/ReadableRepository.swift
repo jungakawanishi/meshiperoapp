@@ -10,8 +10,8 @@ import UIKit
 
 class ReadableRepository: ReadableRepositoryContract {
     
-    func read() -> [String] {
-        return UserDefaults.standard.object(forKey: "Menu") as! [String]
+    func read() -> [Menu] {
+        return UserDefaults.standard.object(forKey: "Menu") as! [Menu]
     }
     
 }

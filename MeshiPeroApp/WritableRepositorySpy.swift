@@ -10,13 +10,14 @@ import Foundation
 
 class WritableRepositorySpy: WritableRepositoryContract {
     
-    private(set) var callArguments: [String] = []
+    private(set) var callArguments: [Menu] = []
     
-    func write(menu: [String]) {
+    func write(menu: [Menu]) {
         self.record(menu)
     }
     
-    private func record(_ args: [String]) {
+    private func record(_ args: [Menu]) {
         self.callArguments += args
     }
+    
 }
