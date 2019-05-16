@@ -20,8 +20,6 @@ class AddMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UserDefaults.standard.removeObject(forKey: "Menu")
-        
         let toolBar:UIToolbar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
         toolBar.sizeToFit()

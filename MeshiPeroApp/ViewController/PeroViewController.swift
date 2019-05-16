@@ -9,7 +9,6 @@
 import UIKit
 
 class PeroViewController: UIViewController {
-
     
     @IBOutlet weak var menuLabel: UILabel!
     
@@ -19,7 +18,7 @@ class PeroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        
         let i = Int.random(in: 0..<menu.count)
         menuLabel.text = menu[i].name
         
