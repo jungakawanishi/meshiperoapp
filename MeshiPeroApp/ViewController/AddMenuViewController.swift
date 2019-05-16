@@ -8,14 +8,7 @@
 
 import UIKit
 
-var menu = [
-    Menu(name: "カレーライス").name,
-    Menu(name: "チャーハン").name,
-    Menu(name: "ラーメン").name,
-    Menu(name: "ギョーザ").name,
-    Menu(name: "唐揚げ").name,
-    Menu(name: "八宝菜").name
-]
+var menu = [Menu(name: "カレーライス")]
 
 class AddMenuViewController: UIViewController {
     
@@ -26,6 +19,8 @@ class AddMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UserDefaults.standard.removeObject(forKey: "Menu")
         
         let toolBar:UIToolbar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
@@ -48,11 +43,9 @@ class AddMenuViewController: UIViewController {
             
             textFieldString = textFieldToAddMenu.text!
             
-            menu.append(Menu(name: textFieldString).name)
+            menu.append(Menu(name: textFieldString))
             
             textFieldToAddMenu.text = ""
-            
-            UserDefaults.standard.set(menu, forKey: "Menu")
             
         }
         

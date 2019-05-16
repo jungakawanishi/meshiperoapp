@@ -20,12 +20,8 @@ class PeroViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        if UserDefaults.standard.object(forKey: "Menu") != nil {
-            menu = UserDefaults.standard.object(forKey: "Menu") as! [String]
-        }
-        
         let i = Int.random(in: 0..<menu.count)
-        menuLabel.text = menu[i]
+        menuLabel.text = menu[i].name
         
     }
 
