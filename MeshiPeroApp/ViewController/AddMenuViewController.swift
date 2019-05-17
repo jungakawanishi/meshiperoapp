@@ -45,7 +45,7 @@ class AddMenuViewController: UIViewController {
             
             textFieldToAddMenu.text = ""
             
-            output.writeBaseMenu(bases: menus)
+            output.writeBaseMenu(bases: menus) // UserDefaultsの仕様上、保存できるvalueの型は制限されているのか？ここで 'Attempt to insert non-property list object' と出る
             
         }
         
