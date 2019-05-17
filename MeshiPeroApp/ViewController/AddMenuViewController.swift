@@ -8,7 +8,7 @@
 
 import UIKit
 
-var menu = [Menu(name: "カレーライス")]
+var menus = [Menu(name: "カレーライス")]
 
 class AddMenuViewController: UIViewController {
     
@@ -16,6 +16,7 @@ class AddMenuViewController: UIViewController {
     @IBOutlet weak var textFieldToAddMenu: UITextField!
     
     var textFieldString = ""
+    let output = Output(repository: WritableRepository())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,16 +37,15 @@ class AddMenuViewController: UIViewController {
     
     @IBAction func pushButton(_ sender: UIButton) {
         
-        
         if (textFieldToAddMenu.text != "") {
             
             textFieldString = textFieldToAddMenu.text!
             
-            menu.append(Menu(name: textFieldString))
+            menus.append(Menu(name: textFieldString))
             
             textFieldToAddMenu.text = ""
             
-            Output.writeBaseMenu(menu: menu) // ここでUDに保存されているobjectを書き換えたいが、それができない
+            output.writeBaseMenu(bases: menus)
             
         }
         

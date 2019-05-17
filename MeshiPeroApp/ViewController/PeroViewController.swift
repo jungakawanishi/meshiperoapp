@@ -8,6 +8,8 @@
 
 import UIKit
 
+let defaults = [Menu(name: "default")]
+
 class PeroViewController: UIViewController {
     
     @IBOutlet weak var menuLabel: UILabel!
@@ -19,11 +21,14 @@ class PeroViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let input = Input(repository: ReadableRepository())
+        
         if (UserDefaults.standard.object(forKey: "Menu") != nil) {
-            menu = Input.readBaseMenu() // ここでUDに保存されている配列を呼び出したいが、それができない
+            menus = input.readBaseMenu()
         }
-        let i = Int.random(in: 0..<menu.count)
-        menuLabel.text = menu[i].name
+        
+        let i = Int.random(in: 0..<menus.count)
+        menuLabel.text = menus[i].name
         
     }
 

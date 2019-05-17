@@ -10,8 +10,8 @@ import Foundation
 
 class WritableRepository: WritableRepositoryContract {
     
-    func write(menu: [Menu]) {
-        UserDefaults.standard.set(menu, forKey: "Menu")
+    func write(bases: [Menu]) {
+        UserDefaults.standard.set(bases, forKey: "Menu")
     }
     
 }

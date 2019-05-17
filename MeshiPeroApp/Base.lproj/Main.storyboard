@@ -68,7 +68,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_TextFieldToAddMenu"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7s-di-3Yj">
                                 <rect key="frame" x="143" y="209" width="89" height="65"/>

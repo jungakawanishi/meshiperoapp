@@ -16,8 +16,8 @@ class Output {
         self.repository = repository
     }
     
-    func writeBaseMenu(menu : [Menu] ) {
-        self.repository.write(menu: menu)
+    func writeBaseMenu(bases : [Menu] ) {
+        self.repository.write(bases: bases)
     }
     
 }
