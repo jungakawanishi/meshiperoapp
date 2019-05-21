@@ -37,9 +37,11 @@ class AddMenuViewController: UIViewController {
     
     @IBAction func pushButton(_ sender: UIButton) {
         
-        if (textFieldToAddMenu.text != "") {
+        let newName = textFieldToAddMenu.text!
+        // if文の条件文を少なくして、見やすくしました。
+        if (newName != "") {
             
-            textFieldString = textFieldToAddMenu.text!
+            textFieldString = newName
             
             output.writeBaseMenu(newMenu: textFieldString)
             
