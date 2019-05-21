@@ -12,8 +12,8 @@ class WritableRepositorySpy: WritableRepositoryContract {
     
     private(set) var callArguments: [String] = []
     
-    func write(bases: [String]) {
-        self.record(bases)
+    func write(newMenu: [String]) {
+        self.record(newMenu)
     }
     
     private func record(_ args: [String]) {
