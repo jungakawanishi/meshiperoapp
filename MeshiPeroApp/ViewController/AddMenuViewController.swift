@@ -41,11 +41,9 @@ class AddMenuViewController: UIViewController {
             
             textFieldString = textFieldToAddMenu.text!
             
-            menus.append(Menu(name: textFieldString).name)
+            output.writeBaseMenu(newMenu: textFieldString)
             
             textFieldToAddMenu.text = ""
-            
-            output.writeBaseMenu(newMenu: menus)
             
         }
         

@@ -31,6 +31,17 @@ class MeshiPeroAppTests: XCTestCase {
         XCTAssertEqual(actualMenu, baseMenu , "意図したメニューが読み込めていない")
         
     }
+    
+    func testWriteBaseMenu() {
+        let newMenu = ["hoge"]
+        
+        let spy = WritableRepositorySpy()
+        let output = Output(repository: spy)
+        
+        output.writeBaseMenu(newMenu: newMenu)
+        XCTAssertEqual(newMenu, spy.callArguments.first, "")
+        
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
