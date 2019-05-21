@@ -8,7 +8,7 @@
 
 import UIKit
 
-var menus = [Menu(name: "カレーライス")]
+var menus = [Menu(name: "カレーライス").name]
 
 class AddMenuViewController: UIViewController {
     
@@ -41,11 +41,11 @@ class AddMenuViewController: UIViewController {
             
             textFieldString = textFieldToAddMenu.text!
             
-            menus.append(Menu(name: textFieldString))
+            menus.append(Menu(name: textFieldString).name)
             
             textFieldToAddMenu.text = ""
             
-            output.writeBaseMenu(bases: menus) // UserDefaultsの仕様上、保存できるvalueの型は制限されているのか？ここで 'Attempt to insert non-property list object' と出る
+            output.writeBaseMenu(bases: menus)
             
         }
         

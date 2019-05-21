@@ -21,7 +21,8 @@ class MeshiPeroAppTests: XCTestCase {
         super.tearDown()
     }
     
-    func testInputBaseMenu() {}
+    func testInput() {
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

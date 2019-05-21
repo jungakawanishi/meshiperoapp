@@ -10,9 +10,8 @@ import Foundation
 
 class WritableRepository: WritableRepositoryContract {
     
-    let storeManager = StoreManager(store: UserDefaults())
-    func write(bases: [Menu]) {
-        storeManager.save(value: bases, key: "Menu") // Generic parameter 'T' could not be inferred のエラーメッセージが出る
+    func write(bases: [String]) {
+        
     }
     
 }

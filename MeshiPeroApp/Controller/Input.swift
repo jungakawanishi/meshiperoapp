@@ -16,7 +16,7 @@ class Input {
         self.repository = repository
     }
     
-    func readBaseMenu() -> [Menu] {
+    func readBaseMenu() -> [String] {
         return self.repository.read()
     }
     

@@ -8,13 +8,13 @@
 
 class ReadableRepositoryStub: ReadableRepositoryContract {
     
-    private let baseMenu: [Menu]
+    private let baseMenu: [String]
     
-    init (baseMenu: [Menu]) {
+    init (baseMenu: [String]) {
         self.baseMenu = baseMenu
     }
     
-    func read() -> [Menu] {
+    func read() -> [String] {
         return self.baseMenu
     }
     

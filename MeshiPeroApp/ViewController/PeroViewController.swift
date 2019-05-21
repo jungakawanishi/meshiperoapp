@@ -8,8 +8,6 @@
 
 import UIKit
 
-let defaults = [Menu(name: "default")]
-
 class PeroViewController: UIViewController {
     
     @IBOutlet weak var menuLabel: UILabel!
@@ -28,7 +26,7 @@ class PeroViewController: UIViewController {
         }
         
         let i = Int.random(in: 0..<menus.count)
-        menuLabel.text = menus[i].name
+        menuLabel.text = menus[i]
         
     }
 
