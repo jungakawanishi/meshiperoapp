@@ -33,13 +33,13 @@ class MeshiPeroAppTests: XCTestCase {
     }
     
     func testWriteBaseMenu() {
-        let newMenu = ["hoge"]
+        let newMenu = "hoge"
         
         let spy = WritableRepositorySpy()
         let output = Output(repository: spy)
         
         output.writeBaseMenu(newMenu: newMenu)
-        XCTAssertEqual(newMenu, spy.callArguments.first, "")
+        XCTAssertEqual(newMenu, spy.callArguments.first!, "新しく追加した献立が正しく保存されていない")
         
     }
 
