@@ -6,7 +6,7 @@
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class ReadableRepository: ReadableRepositoryContract {
     

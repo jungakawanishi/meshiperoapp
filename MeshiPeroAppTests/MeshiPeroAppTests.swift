@@ -21,7 +21,15 @@ class MeshiPeroAppTests: XCTestCase {
         super.tearDown()
     }
     
-    func testInput() {
+    func testReadBaseMenu() {
+        let baseMenu = ["hoge", "fuga"]
+        
+        let repositoryStub = ReadableRepositoryStub(baseMenu: baseMenu)
+        let input = Input(repository: repositoryStub)
+    
+        let actualMenu = input.readBaseMenu()
+        XCTAssertEqual(actualMenu, baseMenu , "意図したメニューが読み込めていない")
+        
     }
 
     func testPerformanceExample() {
