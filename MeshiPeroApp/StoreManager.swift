@@ -2,7 +2,7 @@
 //  StoreMannager.swift
 //  MeshiPeroApp
 //
-//  Created by qoorus on 2019/05/17.
+//  Created by EarthCampus, Inc. on 2019/05/17.
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  MeshiPeroAppAddMenuUITests.swift
 //  MeshiPeroAppUITests
 //
-//  Created by qoorus on 2019/05/22.
+//  Created by EarthCampus, Inc. on 2019/05/22.
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 

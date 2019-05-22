@@ -2,9 +2,12 @@
 //  ReadableMenuRepositoryStub.swift
 //  MeshiPeroApp
 //
-//  Created by qoorus on 2019/05/15.
+//  Created by EarthCampus, Inc. on 2019/05/15.
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
+
+import XCTest
+@testable import MeshiPeroApp
 
 class ReadableRepositoryStub: ReadableRepositoryContract {
     

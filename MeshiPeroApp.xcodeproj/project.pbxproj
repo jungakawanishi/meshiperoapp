@@ -15,16 +15,16 @@
 		7F0EF927223637280086D994 /* MeshiPeroAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF926223637280086D994 /* MeshiPeroAppTests.swift */; };
 		7F0EF932223637280086D994 /* MeshiPeroAppPeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EF931223637280086D994 /* MeshiPeroAppPeroUITests.swift */; };
 		7F1AD95522953D86002C6651 /* MeshiPeroAppAddMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1AD95422953D86002C6651 /* MeshiPeroAppAddMenuUITests.swift */; };
+		7F1AD95622954518002C6651 /* WritableRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31799228D4CBB00203EB2 /* WritableRepositorySpy.swift */; };
+		7F1AD9572295451D002C6651 /* ReadableRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31791228BF6DB00203EB2 /* ReadableRepositoryStub.swift */; };
 		7F6D5D1E2283FE68003692EF /* AddMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D5D1D2283FE68003692EF /* AddMenuViewController.swift */; };
 		7F6D5D202283FEE8003692EF /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D5D1F2283FEE8003692EF /* Menu.swift */; };
 		7FF3178C228BEE3300203EB2 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3178B228BEE3300203EB2 /* Input.swift */; };
 		7FF3178E228BF2A500203EB2 /* ReadableRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3178D228BF2A500203EB2 /* ReadableRepositoryContract.swift */; };
 		7FF31790228BF33700203EB2 /* ReadableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3178F228BF33700203EB2 /* ReadableRepository.swift */; };
-		7FF31792228BF6DB00203EB2 /* ReadableRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31791228BF6DB00203EB2 /* ReadableRepositoryStub.swift */; };
 		7FF31794228D461F00203EB2 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31793228D461F00203EB2 /* Output.swift */; };
 		7FF31796228D476A00203EB2 /* WritableRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31795228D476A00203EB2 /* WritableRepositoryContract.swift */; };
 		7FF31798228D47E800203EB2 /* WritableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31797228D47E800203EB2 /* WritableRepository.swift */; };
-		7FF3179A228D4CBB00203EB2 /* WritableRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31799228D4CBB00203EB2 /* WritableRepositorySpy.swift */; };
 		7FF3179D228EAA9B00203EB2 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3179C228EAA9B00203EB2 /* StoreManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +138,8 @@
 		7F0EF925223637280086D994 /* MeshiPeroAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				7FF31791228BF6DB00203EB2 /* ReadableRepositoryStub.swift */,
+				7FF31799228D4CBB00203EB2 /* WritableRepositorySpy.swift */,
 				7F0EF926223637280086D994 /* MeshiPeroAppTests.swift */,
 				7F0EF928223637280086D994 /* Info.plist */,
 			);
@@ -176,8 +178,6 @@
 			children = (
 				7FF3178B228BEE3300203EB2 /* Input.swift */,
 				7FF31793228D461F00203EB2 /* Output.swift */,
-				7FF31799228D4CBB00203EB2 /* WritableRepositorySpy.swift */,
-				7FF31791228BF6DB00203EB2 /* ReadableRepositoryStub.swift */,
 				7FF31797228D47E800203EB2 /* WritableRepository.swift */,
 				7FF3178F228BF33700203EB2 /* ReadableRepository.swift */,
 				7FF31795228D476A00203EB2 /* WritableRepositoryContract.swift */,
@@ -321,10 +321,8 @@
 				7FF31790228BF33700203EB2 /* ReadableRepository.swift in Sources */,
 				7FF31796228D476A00203EB2 /* WritableRepositoryContract.swift in Sources */,
 				7F0EF914223637260086D994 /* PeroViewController.swift in Sources */,
-				7FF3179A228D4CBB00203EB2 /* WritableRepositorySpy.swift in Sources */,
 				7FF3178E228BF2A500203EB2 /* ReadableRepositoryContract.swift in Sources */,
 				7FF3179D228EAA9B00203EB2 /* StoreManager.swift in Sources */,
-				7FF31792228BF6DB00203EB2 /* ReadableRepositoryStub.swift in Sources */,
 				7FF31798228D47E800203EB2 /* WritableRepository.swift in Sources */,
 				7FF31794228D461F00203EB2 /* Output.swift in Sources */,
 				7F0EF912223637260086D994 /* AppDelegate.swift in Sources */,
@@ -337,7 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1AD95622954518002C6651 /* WritableRepositorySpy.swift in Sources */,
 				7F0EF927223637280086D994 /* MeshiPeroAppTests.swift in Sources */,
+				7F1AD9572295451D002C6651 /* ReadableRepositoryStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
