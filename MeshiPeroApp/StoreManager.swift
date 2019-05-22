@@ -38,9 +38,11 @@ struct StoreManager {
             let decode = try JSONDecoder().decode(T.self, from: data)
             return decode
         } catch let error {
+            // TODO ロガー検討
             print(error.localizedDescription)
             return nil
         }
+        
     }
     
 }
