@@ -6,7 +6,7 @@
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
-class Menu {
+class Menu: Codable {
     
     var name: String
     
