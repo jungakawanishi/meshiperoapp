@@ -127,6 +127,10 @@
 				7F6D5D2122853836003692EF /* ViewController */,
 				7FF3179B228EA9ED00203EB2 /* Controller */,
 				7F0EF915223637260086D994 /* Main.storyboard */,
+				7FF31797228D47E800203EB2 /* WritableRepository.swift */,
+				7FF3178F228BF33700203EB2 /* ReadableRepository.swift */,
+				7FF31795228D476A00203EB2 /* WritableRepositoryContract.swift */,
+				7FF3178D228BF2A500203EB2 /* ReadableRepositoryContract.swift */,
 				7FF3179C228EAA9B00203EB2 /* StoreManager.swift */,
 				7F0EF918223637280086D994 /* Assets.xcassets */,
 				7F0EF91A223637280086D994 /* LaunchScreen.storyboard */,
@@ -178,10 +182,6 @@
 			children = (
 				7FF3178B228BEE3300203EB2 /* Input.swift */,
 				7FF31793228D461F00203EB2 /* Output.swift */,
-				7FF31797228D47E800203EB2 /* WritableRepository.swift */,
-				7FF3178F228BF33700203EB2 /* ReadableRepository.swift */,
-				7FF31795228D476A00203EB2 /* WritableRepositoryContract.swift */,
-				7FF3178D228BF2A500203EB2 /* ReadableRepositoryContract.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
