@@ -10,8 +10,12 @@ import Foundation
 
 class ReadableRepository: ReadableRepositoryContract {
     
-    func read() -> [String] {
-        return UserDefaults.standard.object(forKey: "Menu") as! [String]
+    let storeManager = StoreManager()
+    
+    func read() -> Menus {
+        
+        return storeManager.load(key: "Menu")!
+        
     }
     
 }

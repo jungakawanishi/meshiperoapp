@@ -11,13 +11,13 @@ import XCTest
 
 class ReadableRepositoryStub: ReadableRepositoryContract {
     
-    private let baseMenu: [String]
+    private let baseMenu: Menus
     
-    init (baseMenu: [String]) {
+    init (baseMenu: Menus) {
         self.baseMenu = baseMenu
     }
     
-    func read() -> [String] {
+    func read() -> Menus {
         return self.baseMenu
     }
     

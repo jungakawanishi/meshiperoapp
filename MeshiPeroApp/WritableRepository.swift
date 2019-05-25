@@ -10,9 +10,15 @@ import Foundation
 
 class WritableRepository: WritableRepositoryContract {
     
-    func write(newMenu: String) {
+    let storeManager = StoreManager()
+    
+    func write(newMenu: Menu) {
         menus.append(newMenu)
-        UserDefaults.standard.set(menus, forKey: "Menu")
+        do {
+            try storeManager.save(value: menus, key: "Menu")
+        } catch let error {
+            print(error)
+        }
     }
     
 }

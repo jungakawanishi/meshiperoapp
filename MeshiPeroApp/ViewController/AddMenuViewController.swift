@@ -8,7 +8,7 @@
 
 import UIKit
 
-var menus = [Menu(name: "カレーライス").name]
+var menus = Menus(menus: [Menu(name: "カレーライス")])
 
 class AddMenuViewController: UIViewController {
     
@@ -43,7 +43,9 @@ class AddMenuViewController: UIViewController {
             
             textFieldString = newName
             
-            output.writeBaseMenu(newMenu: textFieldString)
+            let newMenu = Menu(name: textFieldString)
+            
+            output.writeBaseMenu(newMenu: newMenu)
             
             textFieldToAddMenu.text = ""
             

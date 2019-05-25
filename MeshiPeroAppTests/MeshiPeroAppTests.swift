@@ -22,24 +22,24 @@ class MeshiPeroAppTests: XCTestCase {
     }
     
     func testReadBaseMenu() {
-        let baseMenu = ["hoge", "fuga"]
+        let baseMenu = Menus(menus: [Menu(name: "hoge"), Menu(name: "fuga")])
         
         let repositoryStub = ReadableRepositoryStub(baseMenu: baseMenu)
         let input = Input(repository: repositoryStub)
     
-        let actualMenu = input.readBaseMenu()
-        XCTAssertEqual(actualMenu, baseMenu , "意図したメニューが読み込めていない")
+        let actualMenu: Menus = input.readBaseMenu()
+        XCTAssertEqual(actualMenu, baseMenu, "意図したメニューが読み込めていない")
         
     }
     
     func testWriteBaseMenu() {
-        let newMenu = "hoge"
+        let newMenu = Menu(name: "hoge")
         
         let spy = WritableRepositorySpy()
         let output = Output(repository: spy)
         
         output.writeBaseMenu(newMenu: newMenu)
-        XCTAssertEqual(newMenu, spy.callArguments.first!, "新しく追加した献立が正しく保存されていない")
+        XCTAssertEqual(newMenu, spy.callArguments.last!, "新しく追加した献立が正しく保存されていない")
         
     }
 

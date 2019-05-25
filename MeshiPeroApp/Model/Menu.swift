@@ -6,12 +6,26 @@
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
-class Menu {
+struct Menu: Codable, Equatable {
     
     var name: String
     
     init(name: String) {
         self.name = name
+    }
+
+}
+
+struct Menus: Codable, Equatable {
+    
+    var menus: [Menu]
+    
+    init(menus: [Menu]) {
+        self.menus = menus
+    }
+    
+    mutating func append(_ newMenu: Menu) {
+        self.menus.append(newMenu)
     }
     
 }
