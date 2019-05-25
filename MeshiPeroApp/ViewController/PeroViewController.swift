@@ -22,8 +22,7 @@ class PeroViewController: UIViewController {
         let input = Input(repository: ReadableRepository())
         let store = UserDefaults.standard.object(forKey: "Menu")
         
-        if let storeToRead = store {
-            // swiftyに書き直しましたが、if文での処理にstoreToReadは登場しないので、普通にstore != nil を条件文にしても良い気がしました。
+        if let _ = store {
             menus = input.readBaseMenu()
         }
         
