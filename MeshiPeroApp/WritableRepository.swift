@@ -14,8 +14,11 @@ class WritableRepository: WritableRepositoryContract {
     
     func write(newMenu: Menu) {
         menus.append(newMenu)
-        storeManager.save(value: menus, key: "Menu")
-        
+        do {
+            try storeManager.save(value: menus, key: "Menu")
+        } catch let error {
+            print(error)
+        }
     }
     
 }

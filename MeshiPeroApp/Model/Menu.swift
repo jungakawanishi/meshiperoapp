@@ -15,3 +15,17 @@ class Menu: Codable {
     }
     
 }
+
+class Menus: Codable {
+    
+    var menus: [Menu]
+    
+    init(menus: [Menu]) {
+        self.menus = menus
+    }
+    
+    func append(_ newMenu: Menu) {
+        self.menus.append(newMenu)
+    }
+    
+}

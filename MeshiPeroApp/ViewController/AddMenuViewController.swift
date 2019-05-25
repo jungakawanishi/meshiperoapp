@@ -8,7 +8,7 @@
 
 import UIKit
 
-var menus = [Menu(name: "カレーライス")]
+var menus = Menus(menus: [Menu(name: "カレーライス")])
 
 class AddMenuViewController: UIViewController {
     

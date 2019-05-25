@@ -27,8 +27,8 @@ class PeroViewController: UIViewController {
             menus = input.readBaseMenu()
         }
         
-        let i = Int.random(in: 0..<menus.count)
-        menuLabel.text = menus[i].name
+        let i = Int.random(in: 0..<menus.menus.count)
+        menuLabel.text = menus.menus[i].name
         
     }
 
