@@ -11,13 +11,13 @@ import XCTest
 
 class WritableRepositorySpy: WritableRepositoryContract {
     
-    private(set) var callArguments: [String] = []
+    private(set) var callArguments: [Menu] = []
     
-    func write(newMenu: String) {
+    func write(newMenu: Menu) {
         self.record(newMenu)
     }
     
-    private func record(_ arg: String) {
+    private func record(_ arg: Menu) {
         self.callArguments.append(arg)
     }
     

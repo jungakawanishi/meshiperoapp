@@ -22,7 +22,7 @@ class MeshiPeroAppTests: XCTestCase {
     }
     
     func testReadBaseMenu() {
-        let baseMenu = ["hoge", "fuga"]
+        let baseMenu = [Menu(name: "hoge"), Menu(name: "fuga")]
         
         let repositoryStub = ReadableRepositoryStub(baseMenu: baseMenu)
         let input = Input(repository: repositoryStub)
@@ -33,7 +33,7 @@ class MeshiPeroAppTests: XCTestCase {
     }
     
     func testWriteBaseMenu() {
-        let newMenu = "hoge"
+        let newMenu = Menu(name: "hoge")
         
         let spy = WritableRepositorySpy()
         let output = Output(repository: spy)
