@@ -8,8 +8,8 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
-
+class PeroViewController: UIViewController {
+    
     @IBOutlet weak var menuLabel: UILabel!
     
     @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
@@ -18,12 +18,17 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var menu = ["カレーライス", "チャーハン", "ギョーザ", "ラーメン", "八宝菜", "唐揚げ"]
-        let i = Int.random(in: 0..<menu.count)
-        menuLabel.text = menu[i]
+        
+        let input = Input(repository: ReadableRepository())
+        let store = UserDefaults.standard.object(forKey: "Menu")
+        
+        if let _ = store {
+            menus = input.readBaseMenu()
+        }
+        
+        let i = Int.random(in: 0..<menus.menus.count)
+        menuLabel.text = menus.menus[i].name
         
     }
 
-
 }
-

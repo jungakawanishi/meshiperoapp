@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AtN-aF-ZpS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,61 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu2 View Controller-->
-        <scene sceneID="hrx-Y4-hbF">
-            <objects>
-                <viewController storyboardIdentifier="FriedRiceViewController" id="3qJ-9J-NCo" customClass="Menu2ViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kMc-t1-KDf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menu2Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHu-il-MDk">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Menu2ViewController_Label"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="qHu-il-MDk" firstAttribute="leading" secondItem="FGZ-LV-t4u" secondAttribute="leading" id="Uog-fK-LnS"/>
-                            <constraint firstItem="FGZ-LV-t4u" firstAttribute="trailing" secondItem="qHu-il-MDk" secondAttribute="trailing" id="c8C-zX-gbD"/>
-                            <constraint firstItem="qHu-il-MDk" firstAttribute="top" secondItem="FGZ-LV-t4u" secondAttribute="top" id="iLP-4G-vvq"/>
-                            <constraint firstItem="FGZ-LV-t4u" firstAttribute="bottom" secondItem="qHu-il-MDk" secondAttribute="bottom" id="pIy-8g-639"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="FGZ-LV-t4u"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="QDa-1x-wkW" appends="YES" id="1lt-vT-WNf"/>
-                        </connections>
-                    </view>
-                    <connections>
-                        <outlet property="menu2Label" destination="qHu-il-MDk" id="7cd-7I-mbG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ixJ-xO-fb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="QDa-1x-wkW">
-                    <connections>
-                        <action selector="rightSwiped:" destination="3qJ-9J-NCo" id="aj1-oi-0bF"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" id="L1P-7H-JOs"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="121" y="-63"/>
-        </scene>
-        <!--Menu View Controller-->
+        <!--pero-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="CurryRiceViewController" id="BYZ-38-t0r" customClass="MenuViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PeroViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menuLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T49-37-496">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <accessibility key="accessibilityConfiguration" identifier="MenuViewController_Label"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PeroViewController_MenuLabel"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
@@ -84,6 +40,7 @@
                             <outletCollection property="gestureRecognizers" destination="7hL-9S-j8e" appends="YES" id="CPG-em-WSW"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="pero" id="L6R-1y-uHj"/>
                     <connections>
                         <outlet property="menuLabel" destination="T49-37-496" id="oFN-FX-0gp"/>
                     </connections>
@@ -92,11 +49,75 @@
                 <swipeGestureRecognizer direction="right" id="7hL-9S-j8e">
                     <connections>
                         <action selector="rightSwiped:" destination="BYZ-38-t0r" id="vTf-pS-UUj"/>
-                        <segue destination="3qJ-9J-NCo" kind="presentation" id="ZQh-fK-TVE"/>
+                        <segue destination="AtN-aF-ZpS" kind="presentation" id="lcS-u1-xGG"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1014" y="-63"/>
+            <point key="canvasLocation" x="2446" y="-374"/>
+        </scene>
+        <!--addMenu-->
+        <scene sceneID="QVU-hm-W2a">
+            <objects>
+                <viewController id="glf-OI-ivv" customClass="AddMenuViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C89-pN-VAl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="追加したい献立" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3i-eQ-UFt">
+                                <rect key="frame" x="20" y="100" width="335" height="59"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_TextFieldToAddMenu"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7s-di-3Yj">
+                                <rect key="frame" x="143" y="209" width="89" height="65"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="glf-OI-ivv" eventType="touchUpInside" id="WSd-P0-PFZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A7s-di-3Yj" firstAttribute="top" secondItem="w3i-eQ-UFt" secondAttribute="bottom" constant="50" id="5wd-ao-BfR"/>
+                            <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="A7s-di-3Yj" secondAttribute="trailing" constant="143" id="Gj3-yd-H6z"/>
+                            <constraint firstItem="w3i-eQ-UFt" firstAttribute="top" secondItem="NWB-Lh-cvn" secondAttribute="top" constant="80" id="ST0-cj-5gO"/>
+                            <constraint firstItem="A7s-di-3Yj" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="143" id="YqN-Rm-n8U"/>
+                            <constraint firstItem="w3i-eQ-UFt" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="20" id="fgm-xf-QLR"/>
+                            <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="w3i-eQ-UFt" secondAttribute="trailing" constant="20" id="j8J-fV-LgS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="addMenu" id="pIA-0A-HEd"/>
+                    <connections>
+                        <outlet property="textFieldToAddMenu" destination="w3i-eQ-UFt" id="haz-Ic-IR4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOW-xx-Nvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2445.4272863568217" y="402.39999999999998"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7lE-fQ-1gj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AtN-aF-ZpS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zhx-hZ-br2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BTr-ZR-pCj"/>
+                        <segue destination="glf-OI-ivv" kind="relationship" relationship="viewControllers" id="YMr-qu-Xy8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1O9-c6-yzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="-17"/>
         </scene>
     </scenes>
 </document>
