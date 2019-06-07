@@ -10,9 +10,17 @@ import UIKit
 
 class PeroViewController: UIViewController {
     
+    
+    
     @IBOutlet weak var menuLabel: UILabel!
     
     @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
+        
+        let next = storyboard!.instantiateViewController(withIdentifier: "PeroVC") as? PeroViewController
+        let _ = next?.view
+        next?.menuLabel.text = ""
+        self.present(next!,animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {
