@@ -8,8 +8,6 @@
 
 import UIKit
 
-var menus = Menus(menus: [Menu(name: "カレーライス")])
-
 class AddMenuViewController: UIViewController {
     
     

@@ -10,32 +10,40 @@ import UIKit
 
 class PeroViewController: UIViewController {
     
-    
+    var presentMenus = readStore()
+    var nextMenus = readStore()
     
     @IBOutlet weak var menuLabel: UILabel!
     
+    static func readStore() -> Menus {
+        let input = Input(repository: ReadableRepository())
+        let store = UserDefaults.standard.object(forKey: "Menu")
+        
+        if let _ = store {
+            return input.readBaseMenu()
+        }
+        return Menus(menus: [Menu(name: "カレーライス")])
+    }
+    
     @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
-        
-        let next = storyboard!.instantiateViewController(withIdentifier: "PeroVC") as? PeroViewController
+        performSegue(withIdentifier: "PeroSegue", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let next = segue.destination as? UITabBarController
         let _ = next?.view
-        next?.menuLabel.text = ""
-        self.present(next!,animated: true, completion: nil)
-        
+        let nextPero = next?.viewControllers!.first{$0 is PeroViewController} as! PeroViewController
+        nextPero.presentMenus = nextMenus
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let input = Input(repository: ReadableRepository())
-        let store = UserDefaults.standard.object(forKey: "Menu")
+        let i = Int.random(in: 0..<presentMenus.menus.count)
+        menuLabel.text = presentMenus.menus[i].name
         
-        if let _ = store {
-            menus = input.readBaseMenu()
-        }
-        
-        let i = Int.random(in: 0..<menus.menus.count)
-        menuLabel.text = menus.menus[i].name
+        nextMenus.menus = nextMenus.menus.filter{$0 != presentMenus.menus[i]}
         
     }
 
