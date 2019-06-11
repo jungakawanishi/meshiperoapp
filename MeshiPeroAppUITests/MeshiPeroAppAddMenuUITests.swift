@@ -106,7 +106,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
             XCTAssert(prevText != menuLabelElement.label, "前画面：\(prevText)と現在の表示：\(menuLabelElement.label)が同じになっている")
             prevText = menuLabelElement.label
             count += 1
-        } while (count < 20)
+        } while (count < 50)
 
     }
 }
