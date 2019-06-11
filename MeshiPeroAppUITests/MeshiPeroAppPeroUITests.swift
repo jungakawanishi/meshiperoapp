@@ -46,7 +46,7 @@ class MeshiPeroAppPeroUITests: XCTestCase {
         let window = app.windows.element(boundBy: 0)
         let tabBarsQuery = app.tabBars
         
-        tabBarsQuery.buttons["addMenu"].tap()
+        tabBarsQuery.buttons["追加"].tap()
         
         let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
         let buttonElement = app.buttons["addMenuViewController_Button"]
@@ -54,7 +54,7 @@ class MeshiPeroAppPeroUITests: XCTestCase {
         XCTAssert(window.frame.contains(menuTextFieldElement.frame), "addMenuに画面を切り替えた時に、textFieldToAddMenuがUIWindow枠内に表示されていない")
         XCTAssert(window.frame.contains(buttonElement.frame), "addMenuに画面を切り替えた時に、追加ボタンがUIWindow枠内に表示されていない")
         
-        tabBarsQuery.buttons["pero"].tap()
+        tabBarsQuery.buttons["ホーム"].tap()
         
         let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
         

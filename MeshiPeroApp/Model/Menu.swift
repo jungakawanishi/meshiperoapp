@@ -6,6 +6,8 @@
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
+import Foundation
+
 struct Menu: Codable, Equatable {
     
     var name: String

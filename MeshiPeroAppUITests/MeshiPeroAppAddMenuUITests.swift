@@ -32,7 +32,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         
         let tabBarsQuery = app.tabBars
         
-        tabBarsQuery.buttons["addMenu"].tap()
+        tabBarsQuery.buttons["追加"].tap()
         
         let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
         let buttonElement = app.buttons["addMenuViewController_Button"]
@@ -51,7 +51,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         
         let tabBarsQuery = app.tabBars
         
-        tabBarsQuery.buttons["addMenu"].tap()
+        tabBarsQuery.buttons["追加"].tap()
         
         let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
         let buttonElement = app.buttons["addMenuViewController_Button"]
@@ -63,7 +63,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
-        tabBarsQuery.buttons["pero"].tap()
+        tabBarsQuery.buttons["ホーム"].tap()
         
         let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
         var count = 0
@@ -84,7 +84,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
 
         let tabBarsQuery = app.tabBars
 
-        tabBarsQuery.buttons["addMenu"].tap()
+        tabBarsQuery.buttons["追加"].tap()
 
         let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
         let buttonElement = app.buttons["addMenuViewController_Button"]
@@ -96,7 +96,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
 
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
-        tabBarsQuery.buttons["pero"].tap()
+        tabBarsQuery.buttons["ホーム"].tap()
 
         let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
         var count = 0
