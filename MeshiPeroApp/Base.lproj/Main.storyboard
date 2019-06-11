@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--pero-->
+        <!--ホーム-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="PeroVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PeroViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outletCollection property="gestureRecognizers" destination="7hL-9S-j8e" appends="YES" id="CPG-em-WSW"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="pero" id="L6R-1y-uHj"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" selectedImage="Home" id="L6R-1y-uHj"/>
                     <connections>
                         <outlet property="menuLabel" destination="T49-37-496" id="oFN-FX-0gp"/>
                     </connections>
@@ -55,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="2446" y="-374"/>
         </scene>
-        <!--addMenu-->
+        <!--追加-->
         <scene sceneID="QVU-hm-W2a">
             <objects>
                 <viewController id="glf-OI-ivv" customClass="AddMenuViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,7 +91,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="addMenu" id="pIA-0A-HEd"/>
+                    <tabBarItem key="tabBarItem" title="追加" id="pIA-0A-HEd"/>
                     <connections>
                         <outlet property="textFieldToAddMenu" destination="w3i-eQ-UFt" id="haz-Ic-IR4"/>
                     </connections>
@@ -105,7 +105,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AtN-aF-ZpS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zhx-hZ-br2">
+                    <tabBar key="tabBar" tag="1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zhx-hZ-br2">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,4 +120,7 @@
             <point key="canvasLocation" x="1446" y="-17"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Home" width="16" height="16"/>
+    </resources>
 </document>
