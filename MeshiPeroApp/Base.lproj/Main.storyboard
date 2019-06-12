@@ -40,7 +40,7 @@
                             <outletCollection property="gestureRecognizers" destination="7hL-9S-j8e" appends="YES" id="CPG-em-WSW"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ホーム" selectedImage="Home" id="L6R-1y-uHj"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="home" landscapeImage="home" largeContentSizeImage="home" selectedImage="home" id="L6R-1y-uHj"/>
                     <connections>
                         <outlet property="menuLabel" destination="T49-37-496" id="oFN-FX-0gp"/>
                     </connections>
@@ -101,7 +101,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="追加" id="pIA-0A-HEd"/>
+                    <tabBarItem key="tabBarItem" title="追加" image="plus" landscapeImage="plus" largeContentSizeImage="plus" selectedImage="plus" id="pIA-0A-HEd"/>
                     <connections>
                         <outlet property="textFieldToAddMenu" destination="w3i-eQ-UFt" id="haz-Ic-IR4"/>
                     </connections>
@@ -131,6 +131,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Home" width="16" height="16"/>
+        <image name="home" width="60" height="60"/>
+        <image name="plus" width="60" height="60"/>
     </resources>
 </document>
