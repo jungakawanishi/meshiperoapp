@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ホーム-->
+        <!--めしぺろ-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="PeroVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PeroViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outletCollection property="gestureRecognizers" destination="7hL-9S-j8e" appends="YES" id="CPG-em-WSW"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ホーム" image="home" landscapeImage="home" largeContentSizeImage="home" selectedImage="home" id="L6R-1y-uHj"/>
+                    <tabBarItem key="tabBarItem" title="めしぺろ" image="meshi" landscapeImage="meshi" largeContentSizeImage="meshi" selectedImage="meshi" id="L6R-1y-uHj"/>
                     <connections>
                         <outlet property="menuLabel" destination="T49-37-496" id="oFN-FX-0gp"/>
                     </connections>
@@ -131,7 +131,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home" width="60" height="60"/>
+        <image name="meshi" width="60" height="60"/>
         <image name="plus" width="60" height="60"/>
     </resources>
 </document>
