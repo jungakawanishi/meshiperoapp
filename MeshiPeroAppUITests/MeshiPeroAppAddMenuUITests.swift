@@ -79,4 +79,34 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         XCTAssert(hogeCanBeIndicated, "新しい献立を追加して100回スワイプしても、その献立が表示されない")
         
     }
+
+    func testPrevMenu() {
+
+        let tabBarsQuery = app.tabBars
+
+        tabBarsQuery.buttons["addMenu"].tap()
+
+        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
+        let buttonElement = app.buttons["addMenuViewController_Button"]
+
+        menuTextFieldElement.tap()
+        menuTextFieldElement.typeText("ほげほげ")
+
+        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+
+        buttonElement.tap()
+        buttonToHideKeyboardElement.tap()
+        tabBarsQuery.buttons["pero"].tap()
+
+        let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
+        var count = 0
+        var prevText = ""
+        repeat {
+            app.swipeRight()
+            XCTAssert(prevText != menuLabelElement.label, "前画面：\(prevText)と現在の表示：\(menuLabelElement.label)が同じになっている")
+            prevText = menuLabelElement.label
+            count += 1
+        } while (count < 50)
+
+    }
 }

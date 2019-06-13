@@ -13,7 +13,7 @@
         <!--pero-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PeroViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PeroVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PeroViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                 <swipeGestureRecognizer direction="right" id="7hL-9S-j8e">
                     <connections>
                         <action selector="rightSwiped:" destination="BYZ-38-t0r" id="vTf-pS-UUj"/>
-                        <segue destination="AtN-aF-ZpS" kind="presentation" id="lcS-u1-xGG"/>
+                        <segue destination="AtN-aF-ZpS" kind="presentation" identifier="PeroSegue" id="lcS-u1-xGG"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
