@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="追加したい献立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1M-ea-Dm0">
-                                <rect key="frame" x="16" y="62" width="184" height="28"/>
+                                <rect key="frame" x="20" y="62" width="184" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -88,16 +88,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="Y1M-ea-Dm0" secondAttribute="trailing" constant="171" id="3hi-PK-ShH"/>
                             <constraint firstItem="A7s-di-3Yj" firstAttribute="top" secondItem="w3i-eQ-UFt" secondAttribute="bottom" constant="50" id="5wd-ao-BfR"/>
                             <constraint firstItem="w3i-eQ-UFt" firstAttribute="top" secondItem="Y1M-ea-Dm0" secondAttribute="bottom" constant="10" id="Dcq-eY-5Zx"/>
-                            <constraint firstItem="Y1M-ea-Dm0" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="16" id="FNA-52-ftu"/>
                             <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="A7s-di-3Yj" secondAttribute="trailing" constant="143" id="Gj3-yd-H6z"/>
                             <constraint firstItem="Y1M-ea-Dm0" firstAttribute="top" secondItem="NWB-Lh-cvn" secondAttribute="top" constant="42" id="Q39-uV-aVO"/>
                             <constraint firstItem="w3i-eQ-UFt" firstAttribute="top" secondItem="NWB-Lh-cvn" secondAttribute="top" constant="80" id="ST0-cj-5gO"/>
                             <constraint firstItem="A7s-di-3Yj" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="143" id="YqN-Rm-n8U"/>
                             <constraint firstItem="w3i-eQ-UFt" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="20" id="fgm-xf-QLR"/>
-                            <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="Y1M-ea-Dm0" secondAttribute="trailing" constant="175" id="hWJ-1Q-7jl"/>
                             <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="w3i-eQ-UFt" secondAttribute="trailing" constant="20" id="j8J-fV-LgS"/>
+                            <constraint firstItem="Y1M-ea-Dm0" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="20" id="vrh-ZL-Dkh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
                     </view>
