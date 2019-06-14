@@ -11,6 +11,8 @@ import XCTest
 class MeshiPeroAppAddMenuUITests: XCTestCase {
 
     let app = XCUIApplication()
+    let tabBarLeftItemName = "めしぺろ"
+    let tabBarRightItemName = "追加"
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,8 +33,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
     func testCanClearTextField() {
         
         let tabBarsQuery = app.tabBars
-        
-        tabBarsQuery.buttons["追加"].tap()
+        tabBarsQuery.buttons[tabBarRightItemName].tap()
         
         let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
         let buttonElement = app.buttons["addMenuViewController_Button"]
@@ -51,7 +52,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         
         let tabBarsQuery = app.tabBars
         
-        tabBarsQuery.buttons["追加"].tap()
+        tabBarsQuery.buttons[tabBarRightItemName].tap()
         
         let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
         let buttonElement = app.buttons["addMenuViewController_Button"]
@@ -63,7 +64,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
-        tabBarsQuery.buttons["ホーム"].tap()
+        tabBarsQuery.buttons[tabBarLeftItemName].tap()
         
         let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
         var count = 0
@@ -84,7 +85,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
 
         let tabBarsQuery = app.tabBars
 
-        tabBarsQuery.buttons["追加"].tap()
+        tabBarsQuery.buttons[tabBarRightItemName].tap()
 
         let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
         let buttonElement = app.buttons["addMenuViewController_Button"]
@@ -96,7 +97,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
 
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
-        tabBarsQuery.buttons["ホーム"].tap()
+        tabBarsQuery.buttons[tabBarLeftItemName].tap()
 
         let menuLabelElement = app.staticTexts["PeroViewController_MenuLabel"]
         var count = 0
