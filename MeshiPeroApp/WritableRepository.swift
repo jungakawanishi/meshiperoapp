@@ -14,7 +14,7 @@ class WritableRepository: WritableRepositoryContract {
     
     func write(newMenu: Menu) {
         var menus = PeroViewController.readStore()
-        menus.append(newMenu)
+        menus.add(newMenu)
         do {
             try storeManager.save(value: menus, key: "Menu")
         } catch let error {

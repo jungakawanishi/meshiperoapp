@@ -22,7 +22,7 @@ class PeroViewController: UIViewController {
         if let _ = store {
             return input.readBaseMenu()
         }
-        return Menus(menus: [Menu(name: "カレーライス")])
+        return Menus(menus: Set<Menu>([Menu(name: "カレーライス")]))
     }
     
     @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
@@ -40,10 +40,11 @@ class PeroViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let i = Int.random(in: 0..<presentMenus.menus.count)
-        menuLabel.text = presentMenus.menus[i].name
+        let randomMenu = presentMenus.menus.randomElement()!
+
+        menuLabel.text = randomMenu.name
         
-        nextMenus.menus = nextMenus.menus.filter{$0 != presentMenus.menus[i]}
+        nextMenus.menus = nextMenus.menus.filter{$0 != randomMenu}
         
     }
 
