@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--pero-->
+        <!--めしぺろ-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="PeroVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PeroViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outletCollection property="gestureRecognizers" destination="7hL-9S-j8e" appends="YES" id="CPG-em-WSW"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="pero" id="L6R-1y-uHj"/>
+                    <tabBarItem key="tabBarItem" title="めしぺろ" image="meshi" landscapeImage="meshi" largeContentSizeImage="meshi" selectedImage="meshi" id="L6R-1y-uHj"/>
                     <connections>
                         <outlet property="menuLabel" destination="T49-37-496" id="oFN-FX-0gp"/>
                     </connections>
@@ -55,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="2446" y="-374"/>
         </scene>
-        <!--addMenu-->
+        <!--追加-->
         <scene sceneID="QVU-hm-W2a">
             <objects>
                 <viewController id="glf-OI-ivv" customClass="AddMenuViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,33 +79,43 @@
                                     <action selector="pushButton:" destination="glf-OI-ivv" eventType="touchUpInside" id="WSd-P0-PFZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="追加したい献立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1M-ea-Dm0">
+                                <rect key="frame" x="20" y="62" width="184" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="Y1M-ea-Dm0" secondAttribute="trailing" constant="171" id="3hi-PK-ShH"/>
                             <constraint firstItem="A7s-di-3Yj" firstAttribute="top" secondItem="w3i-eQ-UFt" secondAttribute="bottom" constant="50" id="5wd-ao-BfR"/>
+                            <constraint firstItem="w3i-eQ-UFt" firstAttribute="top" secondItem="Y1M-ea-Dm0" secondAttribute="bottom" constant="10" id="Dcq-eY-5Zx"/>
                             <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="A7s-di-3Yj" secondAttribute="trailing" constant="143" id="Gj3-yd-H6z"/>
+                            <constraint firstItem="Y1M-ea-Dm0" firstAttribute="top" secondItem="NWB-Lh-cvn" secondAttribute="top" constant="42" id="Q39-uV-aVO"/>
                             <constraint firstItem="w3i-eQ-UFt" firstAttribute="top" secondItem="NWB-Lh-cvn" secondAttribute="top" constant="80" id="ST0-cj-5gO"/>
                             <constraint firstItem="A7s-di-3Yj" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="143" id="YqN-Rm-n8U"/>
                             <constraint firstItem="w3i-eQ-UFt" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="20" id="fgm-xf-QLR"/>
                             <constraint firstItem="NWB-Lh-cvn" firstAttribute="trailing" secondItem="w3i-eQ-UFt" secondAttribute="trailing" constant="20" id="j8J-fV-LgS"/>
+                            <constraint firstItem="Y1M-ea-Dm0" firstAttribute="leading" secondItem="NWB-Lh-cvn" secondAttribute="leading" constant="20" id="vrh-ZL-Dkh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NWB-Lh-cvn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="addMenu" id="pIA-0A-HEd"/>
+                    <tabBarItem key="tabBarItem" title="追加" image="plus" landscapeImage="plus" largeContentSizeImage="plus" selectedImage="plus" id="pIA-0A-HEd"/>
                     <connections>
                         <outlet property="textFieldToAddMenu" destination="w3i-eQ-UFt" id="haz-Ic-IR4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOW-xx-Nvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2445.4272863568217" y="402.39999999999998"/>
+            <point key="canvasLocation" x="2444" y="400.74962518740631"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7lE-fQ-1gj">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AtN-aF-ZpS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zhx-hZ-br2">
+                    <tabBar key="tabBar" tag="1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zhx-hZ-br2">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,4 +130,8 @@
             <point key="canvasLocation" x="1446" y="-17"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="meshi" width="60" height="60"/>
+        <image name="plus" width="60" height="60"/>
+    </resources>
 </document>

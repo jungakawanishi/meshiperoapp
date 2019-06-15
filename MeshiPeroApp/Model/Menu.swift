@@ -6,7 +6,7 @@
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
-struct Menu: Codable, Equatable {
+struct Menu: Codable, Equatable, Hashable {
     
     var name: String
     
@@ -18,14 +18,14 @@ struct Menu: Codable, Equatable {
 
 struct Menus: Codable, Equatable {
     
-    var menus: [Menu]
+    var menus = Set<Menu>()
     
-    init(menus: [Menu]) {
+    init(menus: Set<Menu>) {
         self.menus = menus
     }
     
-    mutating func append(_ newMenu: Menu) {
-        self.menus.append(newMenu)
+    mutating func add(_ newMenu: Menu) {
+        self.menus.insert(newMenu)
     }
     
 }
