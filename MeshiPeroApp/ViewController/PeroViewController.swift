@@ -25,7 +25,7 @@ class PeroViewController: UIViewController {
         return Menus(menus: Set<Menu>([Menu(name: "カレーライス")]))
     }
     
-    @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
+    @IBAction func upSwiped(_ sender: UISwipeGestureRecognizer) {
         performSegue(withIdentifier: "PeroSegue", sender: sender)
     }
     

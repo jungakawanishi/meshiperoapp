@@ -70,7 +70,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         var count = 0
         var hogeCanBeIndicated = false
         repeat {
-            app.swipeRight()
+            app.swipeUp()
             if (menuLabelElement.label == "ほげほげ") {
                 hogeCanBeIndicated = true
                 break
@@ -103,7 +103,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         var count = 0
         var prevText = ""
         repeat {
-            app.swipeRight()
+            app.swipeUp()
             XCTAssert(prevText != menuLabelElement.label, "前画面：\(prevText)と現在の表示：\(menuLabelElement.label)が同じになっている")
             prevText = menuLabelElement.label
             count += 1

@@ -37,7 +37,7 @@ class MeshiPeroAppPeroUITests: XCTestCase {
         
         XCTAssert(window.frame.contains(menuLabelElement.frame), "初期表示でのUIWindow枠内にラベルが表示されていない")
         
-        app.swipeRight()
+        app.swipeUp()
         XCTAssert(window.frame.contains(menuLabelElement.frame), "一度スワイプした後のUIWindow枠内にラベルが表示されていない")
         
         UserDefaults.standard.removeObject(forKey: "Menu")

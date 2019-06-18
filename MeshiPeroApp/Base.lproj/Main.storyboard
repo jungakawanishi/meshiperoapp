@@ -46,9 +46,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="7hL-9S-j8e">
+                <swipeGestureRecognizer direction="up" id="7hL-9S-j8e">
                     <connections>
-                        <action selector="rightSwiped:" destination="BYZ-38-t0r" id="vTf-pS-UUj"/>
+                        <action selector="upSwiped:" destination="BYZ-38-t0r" id="vTf-pS-UUj"/>
                         <segue destination="AtN-aF-ZpS" kind="presentation" identifier="PeroSegue" id="lcS-u1-xGG"/>
                     </connections>
                 </swipeGestureRecognizer>
