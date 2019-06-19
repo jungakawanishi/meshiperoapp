@@ -1,5 +1,5 @@
 //
-//  WritableMenuRepository.swift
+//  WritableRepository.swift
 //  MeshiPeroApp
 //
 //  Created by EarthCampus, Inc. on 2019/05/16.
