@@ -17,6 +17,7 @@
 		7F1AD95522953D86002C6651 /* MeshiPeroAppAddMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1AD95422953D86002C6651 /* MeshiPeroAppAddMenuUITests.swift */; };
 		7F1AD95622954518002C6651 /* WritableRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31799228D4CBB00203EB2 /* WritableRepositorySpy.swift */; };
 		7F1AD9572295451D002C6651 /* ReadableRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF31791228BF6DB00203EB2 /* ReadableRepositoryStub.swift */; };
+		7F2C7F9F22B9CD140084070E /* RemoveMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C7F9E22B9CD140084070E /* RemoveMenuViewController.swift */; };
 		7F6D5D1E2283FE68003692EF /* AddMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D5D1D2283FE68003692EF /* AddMenuViewController.swift */; };
 		7F6D5D202283FEE8003692EF /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D5D1F2283FEE8003692EF /* Menu.swift */; };
 		7FF3178C228BEE3300203EB2 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3178B228BEE3300203EB2 /* Input.swift */; };
@@ -60,6 +61,7 @@
 		7F0EF931223637280086D994 /* MeshiPeroAppPeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshiPeroAppPeroUITests.swift; sourceTree = "<group>"; };
 		7F0EF933223637280086D994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F1AD95422953D86002C6651 /* MeshiPeroAppAddMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshiPeroAppAddMenuUITests.swift; sourceTree = "<group>"; };
+		7F2C7F9E22B9CD140084070E /* RemoveMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveMenuViewController.swift; sourceTree = "<group>"; };
 		7F6D5D1D2283FE68003692EF /* AddMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuViewController.swift; sourceTree = "<group>"; };
 		7F6D5D1F2283FEE8003692EF /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		7FF3178B228BEE3300203EB2 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				7F0EF913223637260086D994 /* PeroViewController.swift */,
 				7F6D5D1D2283FE68003692EF /* AddMenuViewController.swift */,
+				7F2C7F9E22B9CD140084070E /* RemoveMenuViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				7F0EF912223637260086D994 /* AppDelegate.swift in Sources */,
 				7F6D5D202283FEE8003692EF /* Menu.swift in Sources */,
 				7F6D5D1E2283FE68003692EF /* AddMenuViewController.swift in Sources */,
+				7F2C7F9F22B9CD140084070E /* RemoveMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -110,6 +110,58 @@
             </objects>
             <point key="canvasLocation" x="2444" y="400.74962518740631"/>
         </scene>
+        <!--削除-->
+        <scene sceneID="svs-mH-YXW">
+            <objects>
+                <viewController id="m8O-nV-8e1" customClass="RemoveMenuViewController" customModule="MeshiPeroApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sWl-JZ-Mdf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="削除したい献立" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bza-NP-ZRp">
+                                <rect key="frame" x="20" y="100" width="335" height="59"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_TextFieldToAddMenu"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bP-PA-V3b">
+                                <rect key="frame" x="143" y="209" width="89" height="65"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <state key="normal" title="削除"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="削除したい献立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ6-UB-2TG">
+                                <rect key="frame" x="20" y="62" width="184" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7TV-81-DOA" firstAttribute="trailing" secondItem="0bP-PA-V3b" secondAttribute="trailing" constant="143" id="4HW-Zt-xk1"/>
+                            <constraint firstItem="7TV-81-DOA" firstAttribute="trailing" secondItem="Bza-NP-ZRp" secondAttribute="trailing" constant="20" id="VMA-pG-1sn"/>
+                            <constraint firstItem="Bza-NP-ZRp" firstAttribute="top" secondItem="gZ6-UB-2TG" secondAttribute="bottom" constant="10" id="WbB-XF-Rkt"/>
+                            <constraint firstItem="0bP-PA-V3b" firstAttribute="top" secondItem="Bza-NP-ZRp" secondAttribute="bottom" constant="50" id="bQy-hk-Fk9"/>
+                            <constraint firstItem="Bza-NP-ZRp" firstAttribute="leading" secondItem="7TV-81-DOA" secondAttribute="leading" constant="20" id="et0-Wb-t4J"/>
+                            <constraint firstItem="gZ6-UB-2TG" firstAttribute="leading" secondItem="7TV-81-DOA" secondAttribute="leading" constant="20" id="fdZ-gP-qAM"/>
+                            <constraint firstItem="0bP-PA-V3b" firstAttribute="leading" secondItem="7TV-81-DOA" secondAttribute="leading" constant="143" id="j34-xu-l5U"/>
+                            <constraint firstItem="Bza-NP-ZRp" firstAttribute="top" secondItem="7TV-81-DOA" secondAttribute="top" constant="80" id="luD-sU-pHP"/>
+                            <constraint firstItem="7TV-81-DOA" firstAttribute="trailing" secondItem="gZ6-UB-2TG" secondAttribute="trailing" constant="171" id="o7n-gs-J2j"/>
+                            <constraint firstItem="gZ6-UB-2TG" firstAttribute="top" secondItem="7TV-81-DOA" secondAttribute="top" constant="42" id="wII-S7-Wfd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7TV-81-DOA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="削除" image="remove" landscapeImage="remove" largeContentSizeImage="remove" selectedImage="remove" id="N5u-5x-h7P"/>
+                    <connections>
+                        <outlet property="textFieldToRemoveMenu" destination="Bza-NP-ZRp" id="Guk-Ve-r6h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l82-Xc-0kx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="1108"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7lE-fQ-1gj">
             <objects>
@@ -123,6 +175,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BTr-ZR-pCj"/>
                         <segue destination="glf-OI-ivv" kind="relationship" relationship="viewControllers" id="YMr-qu-Xy8"/>
+                        <segue destination="m8O-nV-8e1" kind="relationship" relationship="viewControllers" id="eXb-YE-Kqb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1O9-c6-yzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -133,5 +186,6 @@
     <resources>
         <image name="meshi" width="60" height="60"/>
         <image name="plus" width="60" height="60"/>
+        <image name="remove" width="60" height="60"/>
     </resources>
 </document>
