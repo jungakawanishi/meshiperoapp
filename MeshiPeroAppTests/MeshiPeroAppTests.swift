@@ -39,7 +39,7 @@ class MeshiPeroAppTests: XCTestCase {
         let output = Output(repository: spy)
         
         output.writeBaseMenu(newMenu: newMenu)
-        XCTAssertEqual(newMenu, spy.callArguments.last!, "新しく追加した献立が正しく保存されていない")
+        XCTAssert(spy.callArguments.contains(newMenu), "新しく追加した献立が正しく保存されていない")
         
     }
 

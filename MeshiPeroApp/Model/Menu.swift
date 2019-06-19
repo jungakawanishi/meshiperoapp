@@ -28,4 +28,8 @@ struct Menus: Codable, Equatable {
         self.menus.insert(newMenu)
     }
     
+    mutating func remove(_ trashMenu: Menu) {
+        self.menus.remove(trashMenu)
+    }
+    
 }

@@ -130,6 +130,9 @@
                                 <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_Button"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="削除"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="m8O-nV-8e1" eventType="touchUpInside" id="hQF-YQ-6HX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="削除したい献立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ6-UB-2TG">
                                 <rect key="frame" x="20" y="62" width="184" height="28"/>

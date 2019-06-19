@@ -17,7 +17,11 @@ class Output {
     }
     
     func writeBaseMenu(newMenu: Menu ) {
-        self.repository.writeNewMenu(newMenu: newMenu)
+        self.repository.write(newMenu: newMenu)
+    }
+    
+    func eraseBaseMenu(trashMenu: Menu) {
+        self.repository.erase(trashMenu: trashMenu)
     }
     
 }

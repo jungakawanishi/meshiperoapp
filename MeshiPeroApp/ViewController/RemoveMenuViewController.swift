@@ -13,6 +13,7 @@ class RemoveMenuViewController: UIViewController {
     @IBOutlet weak var textFieldToRemoveMenu: UITextField!
 
     var textFieldString = ""
+    let output = Output(repository: WritableRepository())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +34,23 @@ class RemoveMenuViewController: UIViewController {
     
     @IBAction func pushButton(_ sender: UIButton) {
         
+        let trashName = textFieldToRemoveMenu.text!
+        
+        if (trashName != "") {
+            
+            textFieldString = trashName
+            
+            let trashMenu = Menu(name: textFieldString)
+            
+            output.eraseBaseMenu(trashMenu: trashMenu)
+            
+            textFieldToRemoveMenu.text = ""
+        }
+        
     }
     
     @objc func closeKeyboard() {
         textFieldToRemoveMenu.resignFirstResponder()
     }
+        
 }
