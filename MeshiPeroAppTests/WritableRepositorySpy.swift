@@ -13,7 +13,7 @@ class WritableRepositorySpy: WritableRepositoryContract {
     
     private(set) var callArguments: [Menu] = []
     
-    func write(newMenu: Menu) {
+    func writeNewMenu(newMenu: Menu) {
         self.record(newMenu)
     }
     

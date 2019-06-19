@@ -12,7 +12,7 @@ class WritableRepository: WritableRepositoryContract {
     
     let storeManager = StoreManager()
     
-    func write(newMenu: Menu) {
+    func writeNewMenu(newMenu: Menu) {
         var menus = PeroViewController.readStore()
         menus.add(newMenu)
         do {

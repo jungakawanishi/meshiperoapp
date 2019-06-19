@@ -8,6 +8,6 @@
 
 protocol WritableRepositoryContract {
     
-    func write(newMenu: Menu)
+    func writeNewMenu(newMenu: Menu)
     
 }

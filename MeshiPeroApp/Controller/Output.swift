@@ -17,7 +17,7 @@ class Output {
     }
     
     func writeBaseMenu(newMenu: Menu ) {
-        self.repository.write(newMenu: newMenu)
+        self.repository.writeNewMenu(newMenu: newMenu)
     }
     
 }
