@@ -12,7 +12,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
 
     let app = XCUIApplication()
     let tabBarLeftItemName = "めしぺろ"
-    let tabBarRightItemName = "追加"
+    let tabBarCenterItemName = "追加"
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -33,10 +33,10 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
     func testCanClearTextField() {
         
         let tabBarsQuery = app.tabBars
-        tabBarsQuery.buttons[tabBarRightItemName].tap()
+        tabBarsQuery.buttons[tabBarCenterItemName].tap()
         
-        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
-        let buttonElement = app.buttons["addMenuViewController_Button"]
+        let menuTextFieldElement = app.textFields["AddMenuViewController_TextField"]
+        let buttonElement = app.buttons["AddMenuViewController_Button"]
         
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
@@ -52,10 +52,10 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         
         let tabBarsQuery = app.tabBars
         
-        tabBarsQuery.buttons[tabBarRightItemName].tap()
+        tabBarsQuery.buttons[tabBarCenterItemName].tap()
         
-        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
-        let buttonElement = app.buttons["addMenuViewController_Button"]
+        let menuTextFieldElement = app.textFields["AddMenuViewController_TextField"]
+        let buttonElement = app.buttons["AddMenuViewController_Button"]
         
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
@@ -85,10 +85,10 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
 
         let tabBarsQuery = app.tabBars
 
-        tabBarsQuery.buttons[tabBarRightItemName].tap()
+        tabBarsQuery.buttons[tabBarCenterItemName].tap()
 
-        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
-        let buttonElement = app.buttons["addMenuViewController_Button"]
+        let menuTextFieldElement = app.textFields["AddMenuViewController_TextField"]
+        let buttonElement = app.buttons["AddMenuViewController_Button"]
 
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")

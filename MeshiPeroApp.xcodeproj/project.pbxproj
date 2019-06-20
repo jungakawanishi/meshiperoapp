@@ -20,6 +20,7 @@
 		7F2C7F9F22B9CD140084070E /* RemoveMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C7F9E22B9CD140084070E /* RemoveMenuViewController.swift */; };
 		7F6D5D1E2283FE68003692EF /* AddMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D5D1D2283FE68003692EF /* AddMenuViewController.swift */; };
 		7F6D5D202283FEE8003692EF /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D5D1F2283FEE8003692EF /* Menu.swift */; };
+		7FEBC07122BB66D7006538C6 /* MeshiPeroAppTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBC07022BB66D6006538C6 /* MeshiPeroAppTabBarUITests.swift */; };
 		7FF3178C228BEE3300203EB2 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3178B228BEE3300203EB2 /* Input.swift */; };
 		7FF3178E228BF2A500203EB2 /* ReadableRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3178D228BF2A500203EB2 /* ReadableRepositoryContract.swift */; };
 		7FF31790228BF33700203EB2 /* ReadableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3178F228BF33700203EB2 /* ReadableRepository.swift */; };
@@ -64,6 +65,7 @@
 		7F2C7F9E22B9CD140084070E /* RemoveMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveMenuViewController.swift; sourceTree = "<group>"; };
 		7F6D5D1D2283FE68003692EF /* AddMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuViewController.swift; sourceTree = "<group>"; };
 		7F6D5D1F2283FEE8003692EF /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		7FEBC07022BB66D6006538C6 /* MeshiPeroAppTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshiPeroAppTabBarUITests.swift; sourceTree = "<group>"; };
 		7FF3178B228BEE3300203EB2 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		7FF3178D228BF2A500203EB2 /* ReadableRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadableRepositoryContract.swift; sourceTree = "<group>"; };
 		7FF3178F228BF33700203EB2 /* ReadableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadableRepository.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				7F0EF931223637280086D994 /* MeshiPeroAppPeroUITests.swift */,
 				7F1AD95422953D86002C6651 /* MeshiPeroAppAddMenuUITests.swift */,
+				7FEBC07022BB66D6006538C6 /* MeshiPeroAppTabBarUITests.swift */,
 				7F0EF933223637280086D994 /* Info.plist */,
 			);
 			path = MeshiPeroAppUITests;
@@ -351,6 +354,7 @@
 			files = (
 				7F1AD95522953D86002C6651 /* MeshiPeroAppAddMenuUITests.swift in Sources */,
 				7F0EF932223637280086D994 /* MeshiPeroAppPeroUITests.swift in Sources */,
+				7FEBC07122BB66D7006538C6 /* MeshiPeroAppTabBarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

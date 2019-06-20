@@ -65,14 +65,14 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="追加したい献立" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3i-eQ-UFt">
                                 <rect key="frame" x="20" y="100" width="335" height="59"/>
-                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_TextFieldToAddMenu"/>
+                                <accessibility key="accessibilityConfiguration" identifier="AddMenuViewController_TextField"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7s-di-3Yj">
                                 <rect key="frame" x="143" y="209" width="89" height="65"/>
-                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_Button"/>
+                                <accessibility key="accessibilityConfiguration" identifier="AddMenuViewController_Button"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="追加"/>
                                 <connections>
@@ -81,6 +81,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="追加したい献立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1M-ea-Dm0">
                                 <rect key="frame" x="20" y="62" width="184" height="28"/>
+                                <accessibility key="accessibilityConfiguration" identifier="AddMenuViewController_Label"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -120,14 +121,14 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="削除したい献立" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bza-NP-ZRp">
                                 <rect key="frame" x="20" y="100" width="335" height="59"/>
-                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_TextFieldToAddMenu"/>
+                                <accessibility key="accessibilityConfiguration" identifier="RemoveMenuViewController_TextField"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bP-PA-V3b">
                                 <rect key="frame" x="143" y="209" width="89" height="65"/>
-                                <accessibility key="accessibilityConfiguration" identifier="addMenuViewController_Button"/>
+                                <accessibility key="accessibilityConfiguration" identifier="RemoveMenuViewController_Button"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="削除"/>
                                 <connections>
@@ -136,6 +137,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="削除したい献立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ6-UB-2TG">
                                 <rect key="frame" x="20" y="62" width="184" height="28"/>
+                                <accessibility key="accessibilityConfiguration" identifier="RemoveMenuViewController_Label"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
