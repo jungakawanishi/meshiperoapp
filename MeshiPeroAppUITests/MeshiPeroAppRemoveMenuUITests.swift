@@ -92,8 +92,8 @@ class MeshiPeroAppRemoveMenuUITests: XCTestCase {
                 break
             }
             count += 1
-        } while (count < 50)
-        XCTAssert(hogeCanErase, "新しい献立を追加して削除しても50回スワイプしているうちに、その献立が表示された")
+        } while (count < 20)
+        XCTAssert(hogeCanErase, "新しい献立を追加して削除して1回スワイプした後の状況で、20回スワイプしているうちに、その献立が表示された")
         
     }
 
