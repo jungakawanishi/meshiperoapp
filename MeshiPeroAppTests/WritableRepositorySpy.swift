@@ -18,7 +18,7 @@ class WritableRepositorySpy: WritableRepositoryContract {
     }
     
     func erase(trashMenu: Menu) {
-        
+        self.recordRemove(trashMenu)
     }
     
     private func recordAdd(_ arg: Menu) {

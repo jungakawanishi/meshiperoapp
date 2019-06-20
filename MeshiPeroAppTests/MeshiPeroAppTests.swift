@@ -42,6 +42,17 @@ class MeshiPeroAppTests: XCTestCase {
         XCTAssert(spy.callArguments.contains(newMenu), "新しく追加した献立が正しく保存されていない")
         
     }
+    
+    func testEraseBaseMenu() {
+        let trashMenu = Menu(name: "hoge")
+        
+        let spy = WritableRepositorySpy()
+        let output = Output(repository: spy)
+        
+        output.writeBaseMenu(newMenu: trashMenu)
+        output.eraseBaseMenu(trashMenu: trashMenu)
+        XCTAssertFalse(spy.callArguments.contains(trashMenu), "新しく追加して削除した献立が保存されたままになっている")
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
