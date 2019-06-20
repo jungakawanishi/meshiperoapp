@@ -24,7 +24,7 @@ class RemoveMenuViewController: UIViewController {
         
         let spacer:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
         let doneButton:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(closeKeyboard))
-        doneButton.accessibilityLabel = "closeKeyboard"
+        doneButton.accessibilityLabel = "closeKeyboardToRemove"
         let toolBarItems = [spacer,doneButton]
         toolBar.setItems(toolBarItems, animated: true)
         

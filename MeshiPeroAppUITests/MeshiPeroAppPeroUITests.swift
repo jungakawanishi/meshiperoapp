@@ -10,7 +10,7 @@ import XCTest
 
 class MeshiPeroAppPeroUITests: XCTestCase {
     let app = XCUIApplication()
-    let tabBarLeftItemName = "めしぺろ"
+    let tabBarLeftItemName  = "めしぺろ"
     let tabBarRightItemName = "追加"
     
     override func setUp() {

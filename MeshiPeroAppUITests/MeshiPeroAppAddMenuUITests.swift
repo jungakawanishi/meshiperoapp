@@ -11,8 +11,9 @@ import XCTest
 class MeshiPeroAppAddMenuUITests: XCTestCase {
 
     let app = XCUIApplication()
-    let tabBarLeftItemName = "めしぺろ"
-    let tabBarCenterItemName = "追加"
+    let tabBarLeftItemName      = "めしぺろ"
+    let tabBarCenterItemName    = "追加"
+    let closeKeyboardToAdd      = "closeKeyboardToAdd"
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -41,7 +42,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
         
-        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+        let buttonToHideKeyboardElement = app.buttons[closeKeyboardToAdd]
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
         XCTAssertEqual(menuTextFieldElement.value as! String, "追加したい献立", "メニューを追加するボタンを押しても入力欄が空欄にならない")
@@ -60,7 +61,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
         
-        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+        let buttonToHideKeyboardElement = app.buttons[closeKeyboardToAdd]
         
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
@@ -93,7 +94,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
 
-        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+        let buttonToHideKeyboardElement = app.buttons[closeKeyboardToAdd]
 
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
