@@ -29,7 +29,9 @@ struct Menus: Codable, Equatable {
     }
     
     mutating func remove(_ trashMenu: Menu) {
-        self.menus.remove(trashMenu)
+        if self.menus.count > 2 {
+            self.menus.remove(trashMenu)
+        }
     }
     
 }
