@@ -30,7 +30,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testCanClearTextField() {
+    func testCanClearTextFieldToAdd() {
         
         let tabBarsQuery = app.tabBars
         tabBarsQuery.buttons[tabBarCenterItemName].tap()
