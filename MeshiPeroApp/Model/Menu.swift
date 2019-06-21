@@ -22,6 +22,7 @@ struct Menus: Codable, Equatable {
     
     init(menus: Set<Menu>) {
         self.menus = menus
+        assert(self.menus.count > 1, "The number of element is less than 2")
     }
     
     mutating func add(_ newMenu: Menu) {
