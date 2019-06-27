@@ -22,7 +22,8 @@ class PeroViewController: UIViewController {
         if let _ = store {
             return input.readBaseMenu()
         }
-        return Menus(menus: Set<Menu>([Menu(name: "カレーライス"), Menu(name: "焼きそば")]))
+        return try! Menus(menus: Set<Menu>([Menu(name: "カレーライス"), Menu(name: "焼きそば")]))
+        
     }
     
     @IBAction func upSwiped(_ sender: UISwipeGestureRecognizer) {

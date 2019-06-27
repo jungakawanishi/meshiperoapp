@@ -20,9 +20,13 @@ struct Menus: Codable, Equatable {
     
     var menus = Set<Menu>()
     
-    init(menus: Set<Menu>) {
+    init(menus: Set<Menu>) throws {
         self.menus = menus
-        assert(self.menus.count > 1, "The number of element is less than 2")
+        
+        if self.menus.count < 2 {
+            throw ModelingError.countcase
+        }
+        
     }
     
     mutating func add(_ newMenu: Menu) {

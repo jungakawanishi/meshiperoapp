@@ -22,11 +22,10 @@ class MeshiPeroAppTests: XCTestCase {
     }
     
     func testReadBaseMenu() {
-        let baseMenu = Menus(menus: Set<Menu>([Menu(name: "hoge"), Menu(name: "fuga")]))
-        
+        let baseMenu = try! Menus(menus: Set<Menu>([Menu(name: "hoge"), Menu(name: "fuga")]))
         let repositoryStub = ReadableRepositoryStub(baseMenu: baseMenu)
         let input = Input(repository: repositoryStub)
-    
+            
         let actualMenu: Menus = input.readBaseMenu()
         XCTAssertEqual(actualMenu, baseMenu, "意図したメニューが読み込めていない")
         
