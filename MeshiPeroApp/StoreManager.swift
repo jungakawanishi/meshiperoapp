@@ -1,5 +1,5 @@
 //
-//  StoreMannager.swift
+//  StoreManager.swift
 //  MeshiPeroApp
 //
 //  Created by EarthCampus, Inc. on 2019/05/17.

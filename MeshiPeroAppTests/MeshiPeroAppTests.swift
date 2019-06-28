@@ -22,11 +22,10 @@ class MeshiPeroAppTests: XCTestCase {
     }
     
     func testReadBaseMenu() {
-        let baseMenu = Menus(menus: [Menu(name: "hoge"), Menu(name: "fuga")])
-        
+        let baseMenu = try! Menus(menus: Set<Menu>([Menu(name: "hoge"), Menu(name: "fuga")]))
         let repositoryStub = ReadableRepositoryStub(baseMenu: baseMenu)
         let input = Input(repository: repositoryStub)
-    
+            
         let actualMenu: Menus = input.readBaseMenu()
         XCTAssertEqual(actualMenu, baseMenu, "意図したメニューが読み込めていない")
         
@@ -39,8 +38,19 @@ class MeshiPeroAppTests: XCTestCase {
         let output = Output(repository: spy)
         
         output.writeBaseMenu(newMenu: newMenu)
-        XCTAssertEqual(newMenu, spy.callArguments.last!, "新しく追加した献立が正しく保存されていない")
+        XCTAssert(spy.callArguments.contains(newMenu), "新しく追加した献立が正しく保存されていない")
         
+    }
+    
+    func testEraseBaseMenu() {
+        let trashMenu = Menu(name: "hoge")
+        
+        let spy = WritableRepositorySpy()
+        let output = Output(repository: spy)
+        
+        output.writeBaseMenu(newMenu: trashMenu)
+        output.eraseBaseMenu(trashMenu: trashMenu)
+        XCTAssertFalse(spy.callArguments.contains(trashMenu), "新しく追加して削除した献立が保存されたままになっている")
     }
 
     func testPerformanceExample() {

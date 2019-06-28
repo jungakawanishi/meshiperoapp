@@ -1,18 +1,17 @@
 //
-//  AddMenuViewController.swift
+//  RemoveMenuViewController.swift
 //  MeshiPeroApp
 //
-//  Created by EarthCampus, Inc. on 2019/05/09.
+//  Created by EarthCampus, Inc. on 2019/06/19.
 //  Copyright © 2019 EarthCampus, Inc. All rights reserved.
 //
 
 import UIKit
 
-class AddMenuViewController: UIViewController {
+class RemoveMenuViewController: UIViewController {
     
-    
-    @IBOutlet weak var textFieldToAddMenu: UITextField!
-    
+    @IBOutlet weak var textFieldToRemoveMenu: UITextField!
+
     var textFieldString = ""
     let output = Output(repository: WritableRepository())
     
@@ -25,33 +24,33 @@ class AddMenuViewController: UIViewController {
         
         let spacer:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
         let doneButton:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(closeKeyboard))
-        doneButton.accessibilityLabel = "closeKeyboardToAdd"
+        doneButton.accessibilityLabel = "closeKeyboardToRemove"
         let toolBarItems = [spacer,doneButton]
         toolBar.setItems(toolBarItems, animated: true)
         
-        textFieldToAddMenu.inputAccessoryView = toolBar
-        // Do any additional setup after loading the view, typically from a nib.
+        textFieldToRemoveMenu.inputAccessoryView = toolBar
+        // Do any additional setup after loading the view.
     }
     
     @IBAction func pushButton(_ sender: UIButton) {
         
-        let newName = textFieldToAddMenu.text!
-        // if文の条件文を少なくして、見やすくしました。
-        if (newName != "") {
+        let trashName = textFieldToRemoveMenu.text!
+        
+        if (trashName != "") {
             
-            textFieldString = newName
+            textFieldString = trashName
             
-            let newMenu = Menu(name: textFieldString)
+            let trashMenu = Menu(name: textFieldString)
             
-            output.writeBaseMenu(newMenu: newMenu)
+            output.eraseBaseMenu(trashMenu: trashMenu)
             
-            textFieldToAddMenu.text = ""
-            
+            textFieldToRemoveMenu.text = ""
         }
         
     }
     
     @objc func closeKeyboard() {
-        textFieldToAddMenu.resignFirstResponder()
+        textFieldToRemoveMenu.resignFirstResponder()
     }
+        
 }

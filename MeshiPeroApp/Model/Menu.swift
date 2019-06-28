@@ -20,12 +20,23 @@ struct Menus: Codable, Equatable {
     
     var menus = Set<Menu>()
     
-    init(menus: Set<Menu>) {
+    init(menus: Set<Menu>) throws {
         self.menus = menus
+        
+        if self.menus.count < 2 {
+            throw ModelingError.tooLittleMenus
+        }
+        
     }
     
     mutating func add(_ newMenu: Menu) {
         self.menus.insert(newMenu)
+    }
+    
+    mutating func remove(_ trashMenu: Menu) {
+        if self.menus.count > 2 {
+            self.menus.remove(trashMenu)
+        }
     }
     
 }

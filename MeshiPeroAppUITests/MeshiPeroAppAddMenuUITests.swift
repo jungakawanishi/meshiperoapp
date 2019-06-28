@@ -11,8 +11,9 @@ import XCTest
 class MeshiPeroAppAddMenuUITests: XCTestCase {
 
     let app = XCUIApplication()
-    let tabBarLeftItemName = "めしぺろ"
-    let tabBarRightItemName = "追加"
+    let tabBarLeftItemName      = "めしぺろ"
+    let tabBarCenterItemName    = "追加"
+    let closeKeyboardToAdd      = "closeKeyboardToAdd"
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -30,18 +31,18 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testCanClearTextField() {
+    func testCanClearTextFieldToAdd() {
         
         let tabBarsQuery = app.tabBars
-        tabBarsQuery.buttons[tabBarRightItemName].tap()
+        tabBarsQuery.buttons[tabBarCenterItemName].tap()
         
-        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
-        let buttonElement = app.buttons["addMenuViewController_Button"]
+        let menuTextFieldElement = app.textFields["AddMenuViewController_TextField"]
+        let buttonElement = app.buttons["AddMenuViewController_Button"]
         
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
         
-        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+        let buttonToHideKeyboardElement = app.buttons[closeKeyboardToAdd]
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
         XCTAssertEqual(menuTextFieldElement.value as! String, "追加したい献立", "メニューを追加するボタンを押しても入力欄が空欄にならない")
@@ -52,15 +53,15 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         
         let tabBarsQuery = app.tabBars
         
-        tabBarsQuery.buttons[tabBarRightItemName].tap()
+        tabBarsQuery.buttons[tabBarCenterItemName].tap()
         
-        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
-        let buttonElement = app.buttons["addMenuViewController_Button"]
+        let menuTextFieldElement = app.textFields["AddMenuViewController_TextField"]
+        let buttonElement = app.buttons["AddMenuViewController_Button"]
         
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
         
-        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+        let buttonToHideKeyboardElement = app.buttons[closeKeyboardToAdd]
         
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
@@ -70,7 +71,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         var count = 0
         var hogeCanBeIndicated = false
         repeat {
-            app.swipeRight()
+            app.swipeUp()
             if (menuLabelElement.label == "ほげほげ") {
                 hogeCanBeIndicated = true
                 break
@@ -85,15 +86,15 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
 
         let tabBarsQuery = app.tabBars
 
-        tabBarsQuery.buttons[tabBarRightItemName].tap()
+        tabBarsQuery.buttons[tabBarCenterItemName].tap()
 
-        let menuTextFieldElement = app.textFields["addMenuViewController_TextFieldToAddMenu"]
-        let buttonElement = app.buttons["addMenuViewController_Button"]
+        let menuTextFieldElement = app.textFields["AddMenuViewController_TextField"]
+        let buttonElement = app.buttons["AddMenuViewController_Button"]
 
         menuTextFieldElement.tap()
         menuTextFieldElement.typeText("ほげほげ")
 
-        let buttonToHideKeyboardElement = app.buttons["closeKeyboard"]
+        let buttonToHideKeyboardElement = app.buttons[closeKeyboardToAdd]
 
         buttonElement.tap()
         buttonToHideKeyboardElement.tap()
@@ -103,7 +104,7 @@ class MeshiPeroAppAddMenuUITests: XCTestCase {
         var count = 0
         var prevText = ""
         repeat {
-            app.swipeRight()
+            app.swipeUp()
             XCTAssert(prevText != menuLabelElement.label, "前画面：\(prevText)と現在の表示：\(menuLabelElement.label)が同じになっている")
             prevText = menuLabelElement.label
             count += 1

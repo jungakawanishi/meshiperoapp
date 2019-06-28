@@ -1,5 +1,5 @@
 //
-//  WritableMenuRepository.swift
+//  WritableRepository.swift
 //  MeshiPeroApp
 //
 //  Created by EarthCampus, Inc. on 2019/05/16.
@@ -15,6 +15,16 @@ class WritableRepository: WritableRepositoryContract {
     func write(newMenu: Menu) {
         var menus = PeroViewController.readStore()
         menus.add(newMenu)
+        do {
+            try storeManager.save(value: menus, key: "Menu")
+        } catch let error {
+            print(error)
+        }
+    }
+    
+    func erase(trashMenu: Menu) {
+        var menus = PeroViewController.readStore()
+        menus.remove(trashMenu)
         do {
             try storeManager.save(value: menus, key: "Menu")
         } catch let error {

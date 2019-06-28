@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PeroViewController.swift
 //  MeshiPeroApp
 //
 //  Created by EarthCampus, Inc. on 2019/03/11.
@@ -22,10 +22,11 @@ class PeroViewController: UIViewController {
         if let _ = store {
             return input.readBaseMenu()
         }
-        return Menus(menus: Set<Menu>([Menu(name: "カレーライス")]))
+        return try! Menus(menus: Set<Menu>([Menu(name: "カレーライス"), Menu(name: "焼きそば")]))
+        
     }
     
-    @IBAction func rightSwiped(_ sender: UISwipeGestureRecognizer) {
+    @IBAction func upSwiped(_ sender: UISwipeGestureRecognizer) {
         performSegue(withIdentifier: "PeroSegue", sender: sender)
     }
     
