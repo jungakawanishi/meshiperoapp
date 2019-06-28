@@ -24,7 +24,7 @@ struct Menus: Codable, Equatable {
         self.menus = menus
         
         if self.menus.count < 2 {
-            throw ModelingError.countcase
+            throw ModelingError.tooLittleMenus
         }
         
     }

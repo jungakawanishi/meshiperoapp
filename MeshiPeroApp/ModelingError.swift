@@ -8,5 +8,5 @@
 
 
 enum ModelingError: Error {
-    case countcase
+    case tooLittleMenus
 }
