@@ -14,19 +14,11 @@ class WritableRepositorySpy: WritableRepositoryContract {
     private(set) var callArguments: Set<Menu> = []
     
     func write(newMenu: Menu) {
-        self.recordAdd(newMenu)
+        self.callArguments.insert(newMenu)
     }
     
     func erase(trashMenu: Menu) {
-        self.recordRemove(trashMenu)
-    }
-    
-    private func recordAdd(_ arg: Menu) {
-        self.callArguments.insert(arg)
-    }
-    
-    private func recordRemove(_ arg: Menu) {
-        self.callArguments.remove(arg)
+        self.callArguments.remove(trashMenu)
     }
     
 }
