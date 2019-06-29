@@ -14,7 +14,8 @@ class ReadableRepository: ReadableRepositoryContract {
     
     func read() -> Menus {
         
-        return storeManager.load(key: "Menu")!
+        let failoverMenus = try! Menus(menus: [Menu(name: "カレーライス"), Menu(name: "チャーハン")])
+        return storeManager.load(key: "Menu") ?? failoverMenus
         
     }
     
