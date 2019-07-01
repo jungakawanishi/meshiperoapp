@@ -36,9 +36,6 @@
                             <constraint firstItem="T49-37-496" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fh7-tf-Okc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="7hL-9S-j8e" appends="YES" id="CPG-em-WSW"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="めしぺろ" image="meshi" landscapeImage="meshi" largeContentSizeImage="meshi" selectedImage="meshi" id="L6R-1y-uHj"/>
                     <connections>
@@ -46,12 +43,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="7hL-9S-j8e">
-                    <connections>
-                        <action selector="upSwiped:" destination="BYZ-38-t0r" id="vTf-pS-UUj"/>
-                        <segue destination="AtN-aF-ZpS" kind="presentation" identifier="PeroSegue" id="lcS-u1-xGG"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="7hL-9S-j8e"/>
             </objects>
             <point key="canvasLocation" x="2446" y="-374"/>
         </scene>
