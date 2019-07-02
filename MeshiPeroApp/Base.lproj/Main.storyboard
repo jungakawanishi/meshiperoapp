@@ -43,7 +43,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="7hL-9S-j8e"/>
             </objects>
             <point key="canvasLocation" x="2446" y="-374"/>
         </scene>

@@ -26,8 +26,6 @@ class PeroViewController: UIViewController {
         
     }
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,6 +36,26 @@ class PeroViewController: UIViewController {
         
         nextMenus.menus = nextMenus.menus.filter{$0 != randomMenu}
         
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        
+        upSwipe.direction = .up
+        
+        view.addGestureRecognizer(upSwipe)
+        
+    }
+    
+    @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {
+        
+        presentMenus.menus = nextMenus.menus
+            
+        nextMenus = PeroViewController.readStore()
+            
+        let randomMenu = presentMenus.menus.randomElement()!
+            
+        menuLabel.text = randomMenu.name
+            
+        nextMenus.menus = nextMenus.menus.filter{$0 != randomMenu}
+            
     }
 
 }
